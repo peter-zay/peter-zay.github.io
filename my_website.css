@@ -1,0 +1,97 @@
+.container {
+    /* Create a flex container for the buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    /* Style the buttons */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA;
+    /* Blue */
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.button:hover {
+    /* Change the background color to green when hovered */
+    background-color: #4CAF50;
+}
+
+body {
+    /* Add a linear gradient from mint green to light blue */
+    background-image: linear-gradient(to right, #10043a, #486670);
+    color: rgba(57, 130, 172, 0.637);
+    font-size: 16px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-image: url('/home/peter/projects/my website/bg2.jpeg');
+    /* Add the path to your overlay image */
+    background-size: cover;
+    z-index: 10;
+    /* Ensure the overlay is on top of other elements */
+}
+
+#about-me {
+    display: block;
+    margin-left: 200px;
+    margin-right: 400px;
+    justify-content: left;
+    align-content: flex-start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+
+.logos {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logos img,
+.symbols img {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.construction-software img {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+h1 {
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+h2, h3 {
+    padding-left: 150px;
+}
