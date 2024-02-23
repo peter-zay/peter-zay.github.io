@@ -1,5 +1,3 @@
-/* Combined CSS from existing files */
-
 /* General styles */
 body {
     padding: 0 150px;
@@ -39,7 +37,8 @@ body {
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 0;
+    border-radius: 15px; /* Apply border radius once */
 }
 
 .brand {
@@ -89,10 +88,12 @@ h2 {
     text-align: center;
 }
 
-#about-me {
-    background-color: #fff;
-    padding: 30px;
-    margin: 20px;
+#about-me,
+#projects {
+    background-color: #fff; /* Apply common background color */
+    padding: 30px; /* Common padding value */
+    margin: 0; /* Reset margin */
+    margin-top: 20px; /* Adjust top margin as needed */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -104,158 +105,4 @@ h2 {
 
 #about-me p:first-child {
     font-weight: bold;
-}
-
-#projects {
-    background-color: #f9f9f9;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.skills {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.skills img {
-    width: 100px;
-}
-
-/* Timeline styles */
-html {
-    overflow-x: hidden;
-}
-
-.timeline-wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: relative;
-}
-
-.timeline-full .node-wrapper {
-    display: block;
-    position: relative;
-    max-width: calc(100% - 300px);
-    /* Adjust width based on padding */
-}
-
-.timeline-full .tl-node {
-    display: flex;
-    margin-left: auto;
-    /* Center the timeline */
-}
-
-
-/* contact page css
-
-/* Combined CSS from existing files */
-
-/* General styles */
-body {
-    padding: 0 150px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.button {
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    background-color: #007bff;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.brand {
-    margin-right: auto;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-link {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #fff;
-}
-
-.section {
-    margin-top: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.section-content {
-    font-size: 1em;
-}
-
-.thumbnail {
-    width: 150px;
-    height: 200px;
-    border: 2px solid black;
-    float: left;
-    margin-right: 20px;
-}
-
-.paragraph {
-    text-align: justify;
-    max-width: 50%;
-}
-
-/* Additional styles for modernizing the page */
-h2 {
-    text-align: center;
-}
-
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    /* Center the icons horizontally */
-    margin-top: 30px;
-    /* Adjust the margin as needed */
-}
-
-.contact-link {
-    margin: 0 10px;
-    /* Add spacing between icons */
-}
-
-.contact-link img {
-    width: 40px;
-    /* Adjust the width of the icon images */
 }
