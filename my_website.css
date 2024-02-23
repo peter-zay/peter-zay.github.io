@@ -1,97 +1,147 @@
+/* Combined CSS from existing files */
+
+/* General styles */
+body {
+    padding: 0 150px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
 .container {
-    /* Create a flex container for the buttons */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .button {
-    /* Style the buttons */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
+    font-size: 16px;
+    margin: 10px;
     cursor: pointer;
-    background-color: #008CBA;
-    /* Blue */
-    border-radius: 10px;
-    /* Add rounded corners */
+    background-color: #007bff;
+    border-radius: 5px;
 }
 
 .button:hover {
-    /* Change the background color to green when hovered */
-    background-color: #4CAF50;
+    background-color: #0056b3;
 }
 
-body {
-    /* Add a linear gradient from mint green to light blue */
-    background-image: linear-gradient(to right, #10043a, #486670);
-    color: rgba(57, 130, 172, 0.637);
-    font-size: 16px;
-
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .2;
-    background-image: url('/home/peter/projects/my website/bg2.jpeg');
-    /* Add the path to your overlay image */
-    background-size: cover;
-    z-index: 10;
-    /* Ensure the overlay is on top of other elements */
-}
-
-#about-me {
-    display: block;
-    margin-left: 200px;
-    margin-right: 400px;
-    justify-content: left;
-    align-content: flex-start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    font-weight: 100;
-
-}
-
-.logos {
-
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-.logos img,
-.symbols img {
-    width: 100%;
-    height: auto;
-    margin-left: 10px;
-    max-width: 50px;
-    max-height: 50px;
+.brand {
+    margin-right: auto;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
-.construction-software img {
-    width: 100%;
-    height: auto;
-    margin-left: 10px;
-    max-width: 50px;
-    max-height: 50px;
+.nav-links {
+    display: flex;
 }
 
-h1 {
-    padding-left: 150px;
-    padding-top: 150px;
+.nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
 }
 
-h2, h3 {
-    padding-left: 150px;
+.section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.section-content {
+    font-size: 1em;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin-right: 20px;
+}
+
+.paragraph {
+    text-align: justify;
+    max-width: 50%;
+}
+
+/* Additional styles for modernizing the page */
+h2 {
+    text-align: center;
+}
+
+#about-me {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#about-me p:first-child {
+    font-weight: bold;
+}
+
+#projects {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skills img {
+    width: 100px;
+}
+
+/* Timeline styles */
+html {
+    overflow-x: hidden;
+}
+
+.timeline-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.timeline-full .node-wrapper {
+    display: block;
+    position: relative;
+    max-width: calc(100% - 300px); /* Adjust width based on padding */
+}
+
+.timeline-full .tl-node {
+    display: flex;
+    margin-left: auto; /* Center the timeline */
 }

@@ -8,6 +8,24 @@
     <meta name="author" content="Peter Zay">
     <link rel="stylesheet" href="./my_website.css">
     <link rel="stylesheet" href="./simpletimeline.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .nav-link {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
     <script type="text/javascript" src="./simpletimeline.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -75,27 +93,48 @@
             timeline.init();
         });
     </script>
-
-
     <title>Peter Zay's Website</title>
 </head>
 
 <body>
-    <h1>Peter Zay</h1>
-    <h2>Project Manager at Clark Builders</h2>
-    <h3>I build and renovate a variety of commercial and multi-family residential buildings.</h3>
+
+    <div class="navbar">
+        <div class="brand">Peter Zay</div>
+        <a href="#" class="nav-link">About Me</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Skills</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+
+
+    <h2>About Me</h2>
     <section id="about-me">
 
-        Hi, I'm Peter, a project manager in the construction industry. I graduated from BCIT Architectural and Building
-        Engineering Technology in 2004 and have been working in the industry ever since. I have over 20 years of
-        experience in managing various construction projects, from residential to commercial, and ensuring they are
-        completed on time, on budget, and with high quality standards. I have a passion for learning new skills and
-        technologies, and that's why I'm currently pursuing a full stack development course online. I want to leverage
-        my knowledge of construction to build software solutions that can improve project management, communication, and
-        collaboration in the industry. I'm always looking for new challenges and opportunities to grow as a professional
-        and as a person.
+        <p>
+            Hi, I'm Peter, a Construction Project Manager. I graduated from BCIT Architectural and
+            Building Engineering Technology in 2004 and have been working in the construction industry ever since.</p>
+        <p>
+            I now have over 20 years of experience in managing various construction projects, from residential to
+            commercial, and ensuring they are completed on time, on budget, and with high quality standards.
+        </p>
+        <p>
+            I have a passion for learning new skills and technologies, and that's why I'm currently learning full stack
+            development.
+        </p>
+        <p>
+            I want to leverage my knowledge of construction to build software solutions that can improve project
+            management, communication, and
+            collaboration in the industry. I'm always looking for new challenges and opportunities to grow as a
+            professional and as a person.
+        </p>
     </section>
-    <section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="timeline"></div>
+        <div class="overlay"></div>
+    </section>
+
+    <!-- <section>
         <h2>Company Experience</h2>
         <div class="logos">
             <img src="/home/peter/projects/my website/resources/companyLogos/1ledcor.jpg" alt="Ledcor Logo">
@@ -110,44 +149,53 @@
 
         </div>
     </section>
-    <div id="timeline"></div>
-
-    <div class="overlay"></div>
-    <section>
+-->
+    <!-- <section>
         <h3>
             <div class="symbols">
-                <img src="./resources/symbols/industryknowledge.jpeg" alt="industry knowledge"><p>Industry Experience</p>
-                <img src="./resources/symbols/flexibleplanning.jpeg" alt="flexible planning"><p>Scheduling</p>
-                <img src="./resources/symbols/communication.jpeg" alt="communication"><p>Communication</p>
-                <img src="./resources/symbols/organization.jpeg" alt="organization"><p>Oranization</p>
-                <img src="./resources/symbols/risk.jpeg" alt="risk management"><p>Risk Management</p>
-                <img src="./resources/symbols/negotiation.jpeg" alt="negotiation"><p>negotiation</p>
-                <img src="./resources/symbols/financial.jpeg" alt="financial"><p>Financial</p>
-                <img src="./resources/symbols/micromanager.jpeg" alt="micromanager"><p>No Micromanagement</p>
-                <img src="./resources/symbols/tech.jpeg" alt="tech"><p>Technology</p>
-                <img src="./resources/symbols/feedback.jpeg" alt="feedback"><p>Open to Feedback</p>
+                <img src="./resources/symbols/industryknowledge.jpeg" alt="industry knowledge">
+                <p>Industry Experience</p>
+                <img src="./resources/symbols/flexibleplanning.jpeg" alt="flexible planning">
+                <p>Scheduling</p>
+                <img src="./resources/symbols/communication.jpeg" alt="communication">
+                <p>Communication</p>
+                <img src="./resources/symbols/organization.jpeg" alt="organization">
+                <p>Oranization</p>
+                <img src="./resources/symbols/risk.jpeg" alt="risk management">
+                <p>Risk Management</p>
+                <img src="./resources/symbols/negotiation.jpeg" alt="negotiation">
+                <p>negotiation</p>
+                <img src="./resources/symbols/financial.jpeg" alt="financial">
+                <p>Financial</p>
+                <img src="./resources/symbols/micromanager.jpeg" alt="micromanager">
+                <p>No Micromanagement</p>
+                <img src="./resources/symbols/tech.jpeg" alt="tech">
+                <p>Technology</p>
+                <img src="./resources/symbols/feedback.jpeg" alt="feedback">
+                <p>Open to Feedback</p>
 
 
 
             </div>
         </h3>
-    </section>
-    <section>
-        <h3>Construction Management Software</h2>
-        <div class="construction-software">
-            <img src="./resources/constructionSoftware/procore.jpg" alt="Procore">
-            <img src="./resources/constructionSoftware/bluebeam.jpg" alt="Bluebeam">
-            <img src="./resources/constructionSoftware/ms365.jpg" alt="Excel">
+    </section> -->
 
-        </div>
+    <section>
+        <h3>Skills</h2>
+            <div class="skills">
+                <img src="./resources/constructionSoftware/procore.jpg" alt="Procore">
+                <img src="./resources/constructionSoftware/bluebeam.jpg" alt="Bluebeam">
+                <img src="./resources/constructionSoftware/ms365.jpg" alt="Excel">
+            </div>
     </section>
+
     <section>
         <h3>Coding Skills</h2>
-        <div>
-            <img src="./" alt="HTML5">
-            <img src="./" alt="css3">
-            <img src="./" alt="JS">
-        </div>
+            <div>
+                <img src="./" alt="HTML5">
+                <img src="./" alt="css3">
+                <img src="./" alt="JS">
+            </div>
     </section>
 
 
