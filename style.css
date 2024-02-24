@@ -1,0 +1,231 @@
+/* General styles */
+body {
+    padding: 0 150px;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    color: #666;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.brand {
+    margin-left: 10px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+a.nav-link {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.section-content {
+    font-size: 1em;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin-right: 20px;
+}
+
+.paragraph {
+    max-width: 50%;
+    text-align: justify;
+}
+
+/* Additional styles for modernizing the page */
+h2 {
+    text-align: center;
+}
+
+#about-me,
+#projects,
+#skills,
+#coding,
+#coding-skills {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-me {
+    color: #333;
+}
+
+#about-me.dark-mode {
+    color: #fff;
+}
+
+#about-me p {
+    color: inherit;
+}
+
+#about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#about-me p:first-child {
+    font-weight: bold;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #111;
+    color: #ccc;
+}
+
+.navbar.dark-mode {
+    background-color: #222;
+}
+
+.brand.dark-mode {
+    color: #fff;
+}
+
+.nav-links a.nav-link.dark-mode {
+    color: #fff;
+}
+
+.section.dark-mode {
+    color: #fff;
+}
+
+.section-title.dark-mode {
+    color: #fff;
+}
+
+.section-content.dark-mode {
+    color: #fff;
+}
+
+.thumbnail.dark-mode {
+    border-color: #fff;
+}
+
+.paragraph.dark-mode {
+    color: #fff;
+}
+
+/* Dark mode styles for the About Me section */
+#about-me p {
+    color: #030c41;
+}
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.dark-mode-toggle.on {
+    background-color: #007bff;
+    transform: translateX(25px);
+}
+
+.dark-mode-toggle.off {
+    background-color: #ccc;
+    transform: translateX(0);
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding-top: 0px;
+    /* Adjust the padding-top value as needed */
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 0vh;
+    /* Adjust the height as needed */
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    /* Adjust the max-width as needed */
+    margin-top: 100px;
+    margin: 10 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+}
+
+.project-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-details p {
+    margin: 5px 0;
+}
+

@@ -1,1 +1,0 @@
-Codecademy project - personal portfolio
