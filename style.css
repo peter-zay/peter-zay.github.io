@@ -47,18 +47,15 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
-    display: flex;
-    margin-right: 20px;
-}
+
 
 a.nav-link {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .nav-link {
     color: #fff;
-    margin-left: 20px;
+    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -109,9 +106,6 @@ h2 {
     color: #333;
 }
 
-#about-me.dark-mode {
-    color: #fff;
-}
 
 #about-me p {
     color: inherit;
@@ -124,73 +118,6 @@ h2 {
 
 #about-me p:first-child {
     font-weight: bold;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #111;
-    color: #ccc;
-}
-
-.navbar.dark-mode {
-    background-color: #222;
-}
-
-.brand.dark-mode {
-    color: #fff;
-}
-
-.nav-links a.nav-link.dark-mode {
-    color: #fff;
-}
-
-.section.dark-mode {
-    color: #fff;
-}
-
-.section-title.dark-mode {
-    color: #fff;
-}
-
-.section-content.dark-mode {
-    color: #fff;
-}
-
-.thumbnail.dark-mode {
-    border-color: #fff;
-}
-
-.paragraph.dark-mode {
-    color: #fff;
-}
-
-/* Dark mode styles for the About Me section */
-#about-me p {
-    color: #030c41;
-}
-
-/* Dark mode toggle button styles */
-.dark-mode-toggle {
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.dark-mode-toggle.on {
-    background-color: #007bff;
-    transform: translateX(25px);
-}
-
-.dark-mode-toggle.off {
-    background-color: #ccc;
-    transform: translateX(0);
 }
 
 .projects-container {
@@ -229,3 +156,18 @@ body.dark-mode {
     margin: 5px 0;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+
+}
+
+.projects {
+    display: flex;
+}
