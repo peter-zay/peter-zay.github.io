@@ -1,10 +1,19 @@
 /* General styles */
 body {
+    font-size: 16px;
     padding: 0 150px;
     font-family: 'Arial', sans-serif;
     background-color: #e0e0e0;
     color: #666;
     margin: 0;
+}
+
+h2, h3 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.5;
 }
 
 .container {
@@ -47,12 +56,6 @@ body {
     font-weight: bold;
 }
 
-
-
-a.nav-link {
-    margin-right: 0px;
-}
-
 .nav-link {
     color: #fff;
     margin-left: 10px;
@@ -90,11 +93,7 @@ h2 {
     text-align: center;
 }
 
-#about-me,
-#projects,
-#skills,
-#coding,
-#coding-skills {
+#about-me, #projects, #skills, #coding, #coding-skills {
     background-color: #fff;
     padding: 30px;
     margin-top: 20px;
@@ -104,8 +103,8 @@ h2 {
 
 #about-me {
     color: #333;
+    
 }
-
 
 #about-me p {
     color: inherit;
@@ -123,28 +122,20 @@ h2 {
 .projects-container {
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
-    padding-top: 0px;
-    /* Adjust the padding-top value as needed */
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 0vh;
-    /* Adjust the height as needed */
+    margin-top: 0px; /* Adjust as needed */
 }
 
 .project-card {
     display: flex;
     align-items: center;
-    max-width: 800px;
-    /* Adjust the max-width as needed */
-    margin-top: 100px;
-    margin: 10 auto;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 100px; /* Adjust as needed */
+    margin: 10 auto; /* Adjust as needed */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-
+    margin-bottom: 20px; /* Adjust as needed */
 }
 
 .project-details {
@@ -157,17 +148,22 @@ h2 {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-
+   display:flex; 
+   justify-content:center; 
 }
 
 .skills {
-    display: flex;
-    justify-content: center;
-
+   display:flex; 
+   justify-content:center; 
 }
 
 .projects {
-    display: flex;
+   display:flex; 
 }
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
