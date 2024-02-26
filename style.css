@@ -1,14 +1,14 @@
-/* General styles */
 body {
     font-size: 16px;
     padding: 0 150px;
     font-family: 'Arial', sans-serif;
-    background-color: #e0e0e0;
+    background-color: #1c346e;
     color: #666;
     margin: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 24px;
 }
 
@@ -36,10 +36,6 @@ p {
     border-radius: 5px;
 }
 
-.button:hover {
-    background-color: #0056b3;
-}
-
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -48,18 +44,36 @@ p {
     color: #fff;
     padding: 10px 0;
     border-radius: 15px;
+
 }
 
 .brand {
     margin-left: 10px;
     margin-right: auto;
     font-weight: bold;
+    font-size: 20px;
+    color: #4ab3c5;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .nav-link {
-    color: #fff;
+    color: #4ab3c5;
     margin-left: 10px;
     text-decoration: none;
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    color: #111f43;
+}
+
+.nav-link:hover {
+    background-color: #4160af;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
 }
 
 .section {
@@ -88,12 +102,17 @@ p {
     text-align: justify;
 }
 
-/* Additional styles for modernizing the page */
 h2 {
     text-align: center;
+    color: #4ab3c5;
+
 }
 
-#about-me, #projects, #skills, #coding, #coding-skills {
+#about-me,
+#projects,
+#skills,
+#coding,
+#coding-skills {
     background-color: #fff;
     padding: 30px;
     margin-top: 20px;
@@ -101,9 +120,15 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#projects {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    list-style-type: symbols();
+}
+
 #about-me {
     color: #333;
-    
+
 }
 
 #about-me p {
@@ -121,21 +146,23 @@ h2 {
 
 .projects-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 0px; /* Adjust as needed */
+    margin-left: 30px;
+    margin-right: auto;
 }
 
 .project-card {
     display: flex;
     align-items: center;
-    max-width: 800px; /* Adjust as needed */
-    margin-top: 100px; /* Adjust as needed */
-    margin: 10 auto; /* Adjust as needed */
+    max-width: 900px;
+    margin-top: 100px;
+    margin: 10 auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
 }
 
 .project-details {
@@ -148,22 +175,54 @@ h2 {
 }
 
 .footer {
-   display:flex; 
-   justify-content:center; 
+    display: flex;
+    justify-content: center;
 }
 
 .skills {
-   display:flex; 
-   justify-content:center; 
+    display: flex;
+    justify-content: center;
 }
 
 .projects {
-   display:flex; 
+    display: flex;
 }
 
 .contact-icons {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: ;
 }
 
+ul {
+    list-style-type: none;
+    /* Remove default bullet */
+    padding: 0;
+    /* Remove default padding */
+}
+
+li::before {
+    content: "\1F3D7";
+    /* Unicode value of the symbol */
+    display: inline-block;
+    width: 1em;
+    font-size: 1.5em;
+    /* Adjust the size of the symbol */
+    margin-right: 0.5em;
+    /* Add spacing between the symbol and text */
+}
+
+li a {
+    color: #333;
+    /* Default text color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s;
+    /* Smooth transition effect */
+}
+
+li a:hover {
+    color: #007bff;
+    /* Text color on hover */
+}
