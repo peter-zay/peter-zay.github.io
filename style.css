@@ -192,7 +192,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: ;
+    max-width:fit-content;
 }
 
 ul {
