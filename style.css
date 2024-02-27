@@ -2,8 +2,8 @@ body {
     font-size: 16px;
     padding: 0 150px;
     font-family: 'Arial', sans-serif;
-    background-color: #1c346e;
-    color: #666;
+    background-color: #10162f;
+    color:#4ab3c5;
     margin: 0;
 }
 
@@ -113,7 +113,7 @@ h2 {
 #skills,
 #coding,
 #coding-skills {
-    background-color: #fff;
+    background-color: #1d2340;
     padding: 30px;
     margin-top: 20px;
     border-radius: 10px;
@@ -127,7 +127,7 @@ h2 {
 }
 
 #about-me {
-    color: #333;
+    color: #4ab3c5;
 
 }
 
@@ -214,7 +214,7 @@ li::before {
 }
 
 li a {
-    color: #333;
+    color: #4ab3c5;
     /* Default text color */
     text-decoration: none;
     /* Remove underline */
