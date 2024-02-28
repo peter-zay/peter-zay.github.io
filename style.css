@@ -193,9 +193,9 @@ h2 {
 
 .contact-icons {
     display: flex;
-    align-items: center;
     justify-content: center;
-    max-width:fit-content;
+    gap: 30px;
+    margin-top: 200px;
 }
 
 ul {
