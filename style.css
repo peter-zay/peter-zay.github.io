@@ -140,7 +140,7 @@ h2 {
     padding: 20px;
     background-color: #1d2340;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(46, 161, 11, 0.562);
+    box-shadow: 0 2px 4px rgba(74, 29, 133, 0.562);
     margin-bottom: 20px;
 }
 
@@ -202,11 +202,12 @@ li a:hover {
 #project-description {
     display: flex;
     flex-grow: 1;
-    margin: 100px auto;
+    margin-top: 50px auto;
+    
 }
 
 .ul ul {
-    color:#15f10e;
+    color: #4ab3c5;
     margin-left: 10px;
 }
 
