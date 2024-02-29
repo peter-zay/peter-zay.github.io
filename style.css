@@ -198,3 +198,16 @@ li a:hover {
     color: #15f10e;
     background-color: #18306d;
 }
+
+#project-description {
+    display: flex;
+    flex-grow: 1;
+    margin: 100px auto;
+}
+
+.ul ul {
+    color:#15f10e;
+    margin-left: 10px;
+}
+
+
