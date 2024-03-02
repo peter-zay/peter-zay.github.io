@@ -49,27 +49,13 @@ body {
     transform: scale(1.1);
 }
 
-.thumbnail {
-    width: 150px;
-    height: 200px;
-    border: 2px solid black;
-    float: left;
-    margin-right: 20px;
-}
-
-.paragraph {
-    max-width: 50%;
-    text-align: justify;
-}
-
 h2 {
     text-align: center;
     color: #4ab3c5;
-
 }
 
 #about-me,
-#projects,
+#project-list-items,
 #skills,
 #coding,
 #coding-skills,
@@ -86,44 +72,15 @@ h2 {
 #about-me p {
     font-size: 1.1em;
     line-height: 1.6;
-
 }
 
 #about-me p:first-child {
     font-weight: bold;
 }
 
-.projects-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 30px;
-    margin-right: auto;
-}
-
-.project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto auto;
-    max-width: fit-content;
-    padding: 20px;
-    background-color: #1d2340;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(74, 29, 133, 0.562);
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
 .project-card img {
     max-width: 100%;
     height: auto;
-}
-
-.project-details {
-    flex: 1;
-    padding: 20px;
 }
 
 .project-details p {
