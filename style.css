@@ -55,13 +55,13 @@ h2 {
 }
 
 #about-me,
-#project-list-items,
+.project-list-items,
 #skills,
 #coding,
 #coding-skills,
 .projects-container,
-.project-card,
-.project-details {
+.project-image,
+.project-card {
     background-color: #1d2340;
     padding: 30px;
     margin-top: 20px;
@@ -81,16 +81,6 @@ h2 {
 .project-card img {
     max-width: 100%;
     height: auto;
-}
-
-.project-details p {
-    margin: 5px 0;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 150px;
 }
 
 .skills {
@@ -114,39 +104,9 @@ ul {
 
 }
 
-
-li a {
-    color: #4ab3c5;
-    /* Default text color */
-    text-decoration: none;
-    /* Remove underline */
-    transition: color 0.3s;
-    /* Smooth transition effect */
-}
-
-li a:hover {
-    color: #15f10e;
-    background-color: #18306d;
-}
-
-#project-description {
-    display: flex;
-    flex-grow: 1;
-    margin-top: 50px auto;
-
-}
-
-.ul ul {
+.project-thumb-info ul {
     color: #4ab3c5;
     margin-left: 10px;
-}
-
-#projects {
-    background-color: #1d2340;
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 #projects-dropdown {
@@ -156,14 +116,17 @@ li a:hover {
     font-size: 16px;
     padding: 5px 10px;
     border: 1px solid #ccc;
-    width: 40%;
+    width: 80%;
     justify-content: center;
-
 }
 
 #projects-dropdown option:hover {
     background-color: #e0e0e00c;
     color: #555;
+}
+
+#projects-dropdown:hover {
+    border-color:#15f10e;
 }
 
 .skills {
@@ -185,26 +148,8 @@ li a:hover {
     justify-content: center;
 }
 
-/* Style for the dropdown list */
-#projects-dropdown {
-    width: 40%;
-    /* Set width to auto to adjust based on content */
-}
-
-/* Increase the font size for project details */
-.project-card ul li {
-    font-size: 30px;
-    /* Adjust the font size to make it more readable */
-}
-
-.section {
-    border: 2px solid transparent;
-    background-image: linear-gradient(to right, #00ff00 0%, #00ff00 50%, transparent 50%, transparent 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
-    padding: 20px;
-    /* Add padding for better visualization */
-    margin: 20px;
-    /* Add margin for separation */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
 }
