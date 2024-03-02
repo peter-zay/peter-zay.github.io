@@ -7,16 +7,6 @@ body {
     margin: 0;
 }
 
-
-h2,
-h3 {
-    font-size: 24px;
-}
-
-p {
-    line-height: 1.5;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -56,27 +46,7 @@ p {
 .nav-link:hover {
     color: #15f10e;
     background-color: #18306d;
-}
-
-.nav-link:hover {
-    background-color: #4160af;
-}
-
-.nav-link:hover {
     transform: scale(1.1);
-}
-
-.section {
-    margin-top: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.section-content {
-    font-size: 1em;
 }
 
 .thumbnail {
