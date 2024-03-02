@@ -40,7 +40,7 @@ p {
     margin-left: 10px;
     margin-right: auto;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: #4ab3c5;
     font-size: 20px;
     font-weight: bold;
@@ -116,6 +116,7 @@ h2 {
 #about-me p {
     font-size: 1.1em;
     line-height: 1.6;
+
 }
 
 #about-me p:first-child {
@@ -142,6 +143,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(74, 29, 133, 0.562);
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .project-card img {
@@ -181,6 +183,7 @@ ul {
     list-style-type: circle;
     /* Remove default bullet */
     padding: 20px;
+    font-size: 16px;
 
 }
 
@@ -203,7 +206,7 @@ li a:hover {
     display: flex;
     flex-grow: 1;
     margin-top: 50px auto;
-    
+
 }
 
 .ul ul {
@@ -211,3 +214,70 @@ li a:hover {
     margin-left: 10px;
 }
 
+#projects {
+    background-color: #1d2340;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+#projects-dropdown {
+    background-color: #131c3d;
+    color: #4ab3c5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 40%;
+    justify-content: center;
+
+}
+
+#projects-dropdown option:hover {
+    background-color: #e0e0e00c;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Set max width and height for the first two icons */
+.skills img:nth-of-type(1),
+.skills img:nth-of-type(2) {
+    max-width: 100px;
+    max-height: 15px;
+}
+
+/* Center the dropdown box on the page */
+.project-list-items {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for the dropdown list */
+#projects-dropdown {
+    width: 40%;
+    /* Set width to auto to adjust based on content */
+}
+
+/* Increase the font size for project details */
+.project-card ul li {
+    font-size: 30px;
+    /* Adjust the font size to make it more readable */
+}
+
+.section {
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #00ff00 0%, #00ff00 50%, transparent 50%, transparent 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
+    padding: 20px;
+    /* Add padding for better visualization */
+    margin: 20px;
+    /* Add margin for separation */
+}
