@@ -5,6 +5,18 @@ body {
     background-color: rgb(19, 28, 61);
     color: #4ab3c5;
     margin: 0;
+    background-image: url(../my\ website/images/ai/darkcity2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact-page-body {
+
+    background-image: url(../my\ website/images/ai/darkcity1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -52,21 +64,19 @@ body {
 
 h2 {
     text-align: center;
-    color: #4ab3c5;
+    color: black;
     margin-top: 100px;
     margin-bottom: 30px;
 }
 
-#about-me,
-.project-list-items,
-#skills,
-#coding,
-#coding-skills,
+.about-me,
+
+
 .projects-container,
 .project-image,
 .project-card {
 
-    background-color: #1d2340;
+    background-color: rgba(53, 63, 116, 0.6);
     padding: 30px;
     margin-top: 20px;
     border-radius: 10px;
@@ -179,4 +189,16 @@ ul {
     display: flex;
     justify-content: center;
     padding: 150px;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d2340;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
