@@ -5,10 +5,12 @@ body {
     background-color: rgb(19, 28, 61);
     color: #4ab3c5;
     margin: 0;
+}
+
+.index-body {
     background-image: url(../my\ website/images/ai/darkcity2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .projects-body {}
 
@@ -154,7 +156,7 @@ ul {
     font-size: 16px;
     padding: 5px 10px;
     border: 1px solid #ccc;
-    width: 50%;
+    width: 25%;
     justify-content: center;
 }
 
