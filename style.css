@@ -160,6 +160,13 @@ ul {
     justify-content: center;
 }
 
+#projects-dropdown option:first-child {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
 #projects-dropdown option:hover {
     background-color: #e0e0e00c;
     color: #555;
