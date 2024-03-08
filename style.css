@@ -73,7 +73,8 @@ body {
 
 h2 {
     text-align: center;
-    color: #4ab3c5 margin-top: 100px;
+    color: #4ab3c5 ;
+    margin-top: 100px;
     margin-bottom: 30px;
 }
 
@@ -174,12 +175,6 @@ ul {
     align-items: center;
 }
 
-/* Set max width and height for the first two icons */
-.skills img:nth-of-type(1),
-.skills img:nth-of-type(2) {
-    max-width: 100px;
-    max-height: 15px;
-}
 
 /* Center the dropdown box on the page */
 .project-list-items {
