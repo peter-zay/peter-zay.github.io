@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Dropdown element not found.');
     }
 });
+
