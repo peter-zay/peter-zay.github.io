@@ -78,6 +78,7 @@ h2 {
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 3rem;
+    padding-top: 100px;
    
 }
 
@@ -194,6 +195,7 @@ align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
 }
 
 
@@ -210,6 +212,10 @@ align-items: center;
 
 }
 
+.project-card:last-child {
+    margin-bottom: 100px;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -219,6 +225,8 @@ align-items: center;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    z-index: 999;
+    margin-top: 100px;
 }
 
 @media only screen and (max-width: 768px) {
