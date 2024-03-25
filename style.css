@@ -51,14 +51,14 @@ body {
     margin-left: 10px;
     margin-right: auto;
     font-weight: bold;
-    font-size: 30pxpx;
-    color: #4ab3c5;
+    font-size: 1rem;
+    color: orangered;
     font-size: 30px;
     font-weight: bold;
 }
 
 .nav-link {
-    color: #4ab3c5;
+    color: orangered;
     margin-left: 10px;
     text-decoration: none;
     margin-right: 5px;
@@ -73,25 +73,28 @@ body {
 
 h2 {
     text-align: center;
-    color: #4ab3c5 ;
+    color: orangered ;
     margin-top: 100px;
     margin-bottom: 30px;
+   
 }
 
 .about-me,
 .project-card {
     display: flex;
     background-color: rgba(53, 63, 116, 0.6);
-    padding: 30px;
+    padding: 1rem;
 
 }
 
-.project-image {
-    display: flex;
-    padding: 20px;
-    width: 25vw;
-    max-width: 100%;
+.project-image img {
+    display: block;
+    width: 100%; /* Make the image take up 100% of its container width */
+    height: 1000px; /* Make the image take up 100% of its container height */
+    max-height: 1000px;
+    object-fit: contain; /* Scale the image to cover the entire container while maintaining aspect ratio */
 }
+
 
 .project-thumb-info {
     display: flex;
@@ -127,7 +130,8 @@ h2 {
 .skills {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .contact-icons {
@@ -157,7 +161,7 @@ ul {
     font-size: 16px;
     padding: 5px 10px;
     border: 1px solid #ccc;
-    width: 25%;
+    width: 75%;
     justify-content: center;
 }
 
@@ -206,4 +210,32 @@ align-items: center;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .brand {
+        margin: 0;
+        font-size:3rem;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+    .skills {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+    /* Add more styles as needed for better mobile layout */
 }
