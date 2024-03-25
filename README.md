@@ -1,0 +1,1 @@
+This is my personal website. I'm attempting to capture the essence of a 20 year career in construction. I have discovered an interest in the software that is being used in the contruction industry and in fact I'm keen on defining the "what is lacking" in the software and processes we use these days. 
