@@ -18,6 +18,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: auto;
 }
 
 .contact-page-body {
@@ -53,7 +54,7 @@ body {
     font-weight: bold;
     font-size: 1rem;
     color: orangered;
-    font-size: 30px;
+    font-size: 4rem;
     font-weight: bold;
 }
 
@@ -74,8 +75,9 @@ body {
 h2 {
     text-align: center;
     color: orangered ;
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 3rem;
    
 }
 
@@ -87,27 +89,40 @@ h2 {
 
 }
 
+.project-card {
+    display: flex;
+    background-color: rgba(53, 63, 116, 0.6);
+    max-width: 100%; /* Make the image take up 100% of its container width */
+    height: auto; /* Make the image take up 100% of its container height */
+    max-height: 1000px;
+    object-fit: contain; /* Scale the image to cover the entire container while maintaining aspect ratio */
+    margin-bottom: 0;
+    padding: 20px 5px 0px 5px;
+}
+
+
 .project-image img {
     display: block;
     width: 100%; /* Make the image take up 100% of its container width */
-    height: 1000px; /* Make the image take up 100% of its container height */
+    height: auto; /* Make the image take up 100% of its container height */
     max-height: 1000px;
-    object-fit: contain; /* Scale the image to cover the entire container while maintaining aspect ratio */
-}
+    object-fit: cover; /* Scale the image to cover the entire container while maintaining aspect ratio */
+    margin-bottom: 0;
+    padding: 20px 5px 0px 5px;
+    }
 
+    #tribeca-lots img {
+        width: 100% !important;
+    }
 
-.project-thumb-info {
+.logo img{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 25%;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: auto;
 }
 
 #about-me p {
@@ -119,17 +134,9 @@ h2 {
     font-weight: bold;
 }
 
-.project-card img {
-    display: flex;
-    justify-content: center;
-    align-items: cen;
-    max-width: 100%;
-    height: auto;
-}
-
 .skills {
     display: flex;
-    justify-content: center;
+    justify-content:start;
     flex-wrap: wrap;
     gap: 5px;
 }
@@ -144,14 +151,16 @@ h2 {
 ul {
     list-style-type: circle;
     /* Remove default bullet */
-    padding: 20px;
+    padding: 2%;
+    margin: 0;
+    justify-content: left;
     font-size: 16px;
 
 }
 
 .project-thumb-info ul {
     color: #4ab3c5;
-    margin-left: 10px;
+    margin:0;
 }
 
 #projects-dropdown {
@@ -239,3 +248,5 @@ align-items: center;
     }
     /* Add more styles as needed for better mobile layout */
 }
+
+
