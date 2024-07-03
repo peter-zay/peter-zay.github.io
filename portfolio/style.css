@@ -1,0 +1,400 @@
+@media only screen and (min-width: 1024px) {
+    #projects-dropdown {
+        text-align: center; /* Center the text for desktop view */
+    }
+    body {
+        font-size: 18px;
+        padding: 0 150px;
+        background-color: rgb(0 0 0);
+        color: #15f10e;
+        margin: 0;
+        font-family: 'Merriweather', serif;
+    }
+    .index-body {
+        background-image: url("images/ai/8k1.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Make background move with scrolling */
+    }
+}
+
+
+
+.projects-body {
+    background-image: url("images/ai/8k1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Make background move with scrolling */
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: orangered;
+    text-align: center; /* Center all h2 elements */
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.contact-page-body {
+    background-image: url("images/ai/sunset.img");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1d2340;
+    color: orangered;
+    padding: 10px 0;
+    border-radius: 15px;
+    margin-bottom: 75px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 76.7%);
+}
+
+#mobile {
+    font-size: 20px;
+    color: orangered;
+}
+
+.brand {
+    margin-left: 10px;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.nav-link {
+    color: orangered;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.nav-link:hover {
+    color: #15f10e;
+    background-color: #18306d;
+    transform: scale(1.1);
+    transition: color 1s;
+}
+
+
+.h2-wrapper h2 {
+    margin: 0;
+    color: orangered; /* Ensure text color matches the original h2 */
+    
+}
+
+.about-me,
+.project-card {
+    display: flex;
+    justify-content: left;
+    background-color: rgb(53 63 116 / 10%);
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0; /* Ensure no gap between flex items */
+}
+
+.logo {
+    flex: 0 0 auto;
+    max-width: 33%;
+    box-sizing: border-box;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove all padding */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.project-thumb-info {
+    flex: 1;
+    padding: 0; /* Remove all padding */
+    margin: 0; /* Remove all margins */
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 0; /* Ensure no margin on the right */
+}
+
+.project-image {
+    width: 40%;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#projects-dropdown {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(53, 63, 116, 0.5); /* Semi-transparent background */
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 45%;
+    color: #15f10e; /* Ensure text color is visible on dark background */
+    text-align: center; /* Center the text */
+}
+
+#projects-dropdown:focus {
+    background-color: rgba(0, 0, 0, 0.8); /* Much darker background on focus */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#projects-dropdown:hover {
+    border-color: #15f10e;
+    background-color: rgba(3, 34, 39, 0.5); /* Semi-transparent background on hover */
+}
+
+/* Ensure dropdown list items are semi-transparent */
+#projects-dropdown option {
+    background-color: rgba(53, 63, 116, 0.5); /* Semi-transparent background for dropdown items */
+    color: #15f10e; /* Ensure text color is visible on dark background */
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center;
+    background-color: rgb(53 63 116 / 30%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-bottom: 20px;
+}
+
+.skills img {
+    max-height: 20px; /* Ensure logos are not too large */
+    width: auto;
+    margin: 10px;
+}
+
+.project-list-items {
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.project-card:last-child {
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1d2340;
+    color: #15f10e;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align it to the bottom of the viewport */
+    left: 0; /* Ensure it spans the full width */
+    opacity: 0.35; /* Set opacity to 35% */
+}
+
+.project-thumb-info {
+    position: static;
+    margin-top: 0;
+}
+
+.project-thumb-info ul {
+    list-style-type: none;
+    padding: 0; /* Remove padding from ul */
+    margin: 0; /* Remove margin from ul */
+}
+
+.project-thumb-info ul li::before {
+    content: "+ ";
+    color: black;
+}
+
+.about-me {
+    background-color: rgba(53, 63, 116, 0.2); /* 80% transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    position: relative;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Ensure the text doesn't overflow */
+    text-align: center; /* Center the text */
+}
+
+.background-motion {
+    background-image: url("images/ai/8k1.avif"); /* Use your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Make background move with scrolling */
+}
+
+
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+    body {
+        font-size: 1rem;
+        padding: 0 10px;
+        color: #15f10e;
+    }
+
+    .index-body {
+        background-image: url("images/ai/8k1.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Make background move with scrolling */
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        color: orangered;
+        text-align: center; /* Center all h2 elements */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: orangered;
+    }
+
+    .brand {
+        margin: 0;
+        font-size: 3rem;
+        color: orangered;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        color: orangered;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row; /* Stack items vertically */
+        align-items: center;
+        background-color: rgb(53 63 116 / 30%);
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-bottom: 20px;
+        justify-content: space-evenly; /* Space logos evenly */
+    }
+
+    .skills img {
+        max-width: 5%; /* Adjust logo size for mobile */
+        margin: 5px;
+        flex: 1 1 30%; /* Allow images to shrink and grow */
+    }
+
+    .ci-1,
+    .ci-2,
+    .ci-3 {
+        background-color: rgb(53 63 116 / 60%);
+        margin: 8rem 5%;
+    }
+
+    .ci-1:hover,
+    .ci-2:hover,
+    .ci-3:hover {
+        color: #15f10e;
+        background-color: #18306d;
+        transform: scale(1.1);
+    }
+
+    #projects-dropdown {
+        font-size: 20px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        width: 95%;
+        transition: 2s;
+        color: #15f10e;
+        text-align: center; /* Center the preview text */
+    }
+
+    #projects-dropdown:not(:focus) {
+        text-align: center; /* Center the preview text only before it's clicked */
+    }
+
+    .project-image {
+        width: 95%;
+    }
+
+    .project-card {
+        width: 95%;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .contact h2 {
+        margin-top: 100px; /* Add 100px top margin to h2 within .contact */
+    }
+    
+}
+/* ... existing code ... */
+
+@media only screen and (max-width: 375px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3rem; /* Adjust font size if needed */
+    }
+
+    #mobile {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px; /* Adjust font size if needed */
+    }
+}
+
+/* ... existing code ... */
