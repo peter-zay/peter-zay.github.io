@@ -91,7 +91,7 @@ h2 {
     color: orangered;
 }
 
-.nav-link {
+.nav-link, .mobile {
     color: orangered;
     margin-left: 10px;
     text-decoration: none;
@@ -379,7 +379,7 @@ h2 {
 }
 /* ... existing code ... */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 440px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -395,6 +395,15 @@ h2 {
         margin: 0 auto;
         text-align: center;
         font-size: 20px; /* Adjust font size if needed */
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+        align-text: center;
+        justify-content: center;
+        color: black;
+
     }
 }
 
