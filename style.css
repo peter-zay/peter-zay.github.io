@@ -94,7 +94,18 @@ h2 {
 .nav-link, .mobile {
     display: flex;
     align-items: center;
-    color: rgb(7, 2, 0);
+    color: orangered;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    color: black;
     margin-left: 10px;
     text-decoration: none;
     margin-right: 30px;
