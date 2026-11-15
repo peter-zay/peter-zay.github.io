@@ -1,138 +1,417 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-P5JWS41E46"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5JWS41E46"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-P5JWS41E46");
+  </script>
 
-      gtag("config", "G-P5JWS41E46");
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Zay — Senior Construction Project Manager, Calgary</title>
+  <meta name="description" content="Peter Zay is a Senior Project Manager at Clark Builders in Calgary with 20+ years delivering residential, commercial, interiors and civic projects across BC and Alberta.">
+  <meta name="keywords" content="Peter Zay, construction project manager, Calgary, IPD, lean construction, Clark Builders">
+  <meta name="author" content="Peter Zay">
+  <meta property="og:title" content="Peter Zay — Senior Construction Project Manager">
+  <meta property="og:description" content="Two decades of building across BC and Alberta.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://peter-zay.github.io/">
+  <meta property="og:image" content="https://peter-zay.github.io/images/projectThumbnails/4scott.jpg">
+  <meta name="theme-color" content="#16181B">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Peter Zay's Personal Portfolio Page" />
-    <meta
-      name="keywords"
-      content="Peter Zay, project_management, web design, construction management software"
-    />
-    <meta name="author" content="Peter Zay" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Peter Zay</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <body class="index-body">
-    <div class="navbar">
-      <div class="brand">Peter Zay</div>
-      <a href="#about-me" class="nav-link">About Me</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </div>
+  <header class="nav">
+    <nav class="wrap" aria-label="Main">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">PZ</span>Peter Zay</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
 
-    <h2>&#128075;About Me</h2>
-
-    <section class="about-me" id="about-me">
-      <div>
-        <p>
-          Hello, Welcome to my site. I'm a Construction Project Manager. I'm
-          passionate about construction and technologies driving construction.
-          Here is a brief overview of my past and current projects.
-        </p>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-text">
+          <div class="hero-kicker"><span class="dot"></span>Senior Project Manager · Clark Builders · Calgary</div>
+          <h1>Two decades of building<br>across BC and Alberta.</h1>
+          <p class="hero-lede">From Vancouver towers to Calgary communities, I lead project teams through integrated, lean delivery — and I write code to make the tools around them better.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/projectThumbnails/4scott.jpg" alt="Hotel Georgia and residential tower in Vancouver" width="500" height="806">
+          <figcaption>Hotel Georgia, Vancouver · 48 storeys</figcaption>
+        </figure>
       </div>
     </section>
 
-    <h2>&#127959;Projects</h2>
-
-    <section class="project-list-items" id="project-list-items">
-      <select id="projects-dropdown" class="dropdown">
-        <option value="">Please select a project</option>
-        <option value="projects.html#one-harbour-green">
-          2004 One Harbour Green
-        </option>
-        <option value="projects.html#two-harbour-green">
-          2005 Two Harbour Green
-        </option>
-        <option value="projects.html#tribeca-lofts">
-          2005 Tribeca Lofts Yaletown
-        </option>
-        <option value="projects.html#fort-nelson-ice-arena">
-          2007 Northern Rockies Recreation Centre
-        </option>
-        <option value="">2007 Axton Industrial Custom Fabrications</option>
-        <option value="projects.html#hotel-georgia">
-          2008 Hotel Georgia and Residential Tower
-        </option>
-        <option value="projects.html#yvr">
-          2012 YVR Domestic Operations Center
-        </option>
-        <option value="projects.html#golder">
-          2013 Golder Associates Office
-        </option>
-        <option value="projects.html#dior">
-          2014 Christian Dior at Hotel Vancouver
-        </option>
-        <option value="projects.html#westernforest">
-          2015 Western Forest Products Office
-        </option>
-        <option value="projects.html#worksafebc">2015 WorkSafeBC Office</option>
-        <option value="projects.html#windsor">
-          2017 The Windsor on Elbow Drive
-        </option>
-        <option value="projects.html#national">
-          2017 National Block on 17th Ave
-        </option>
-        <option value="projects.html#steps">2019 Steps Bridgeland</option>
-        <option value="projects.html#plaza">2021 Plaza Apartments</option>
-        <option value="projects.html#attainable">
-          2023 Attainable Homes Calgary
-        </option>
-      </select>
+    <section class="stats" aria-label="Career at a glance">
+      <div class="wrap">
+        <div><div class="stat-num">22</div><div class="stat-label">years in construction (since 2004)</div></div>
+        <div><div class="stat-num">18</div><div class="stat-label">projects delivered</div></div>
+        <div><div class="stat-num">9</div><div class="stat-label">builders worked with</div></div>
+        <div><div class="stat-num">2</div><div class="stat-label">provinces: BC and Alberta</div></div>
+      </div>
     </section>
 
-    <h2>&#127959;Skills Bucket</h2>
-
-    <section class="skills">
-      <img
-        src="images/constructionSoftware/Procore_Logo_1C_Black_RGB.png"
-        alt="Procore"
-      />
-      <img
-        src="images/constructionSoftware/Bluebeam-CorporateLogos-2022/RGB-ForDigital/PNG/BB-Logo-Horizontal-Black-1x.png"
-        alt="Bluebeam"
-      />
-      <img src="resources/html.png" alt="html" />
-      <img src="resources/css.png" alt="css" />
-      <img src="resources/java-script.png" alt="javascript" />
-      <img src="resources/github_733609.png" alt="git" />
+    <section class="featured reveal">
+      <div class="wrap">
+        <div class="eyebrow">Featured project</div>
+        <div class="feature-card">
+          <div class="feature-visual" aria-hidden="true">
+            <div class="big">IPD</div>
+            <div class="sub">Integrated Project Delivery · Lean project controls</div>
+          </div>
+          <div class="feature-body">
+            <div class="tags">
+              <span class="tag tag-dark">2026</span>
+              <span class="tag">Integrated Project Delivery</span>
+              <span class="tag">Lean</span>
+            </div>
+            <h2>CASA</h2>
+            <p>An IPD project at Clark Builders where I rolled out PCS, a lean project control system, across the integrated team.</p>
+            <div class="facts">
+              <div><div class="fact-label">Builder</div><div class="fact-value">Clark Builders</div></div>
+              <div><div class="fact-label">My role</div><div class="fact-value">Senior Project Manager</div></div>
+              <div><div class="fact-label">What I led</div><div class="fact-value">PCS lean controls rollout</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </body>
 
-  <footer class="footer">
-    <p>
-      made in Calgary by Peter Zay with
-      <span style="color: red"> &hearts; </span> in 2024
-    </p>
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="projects-head">
+          <div>
+            <div class="eyebrow">Project portfolio · 2004–2026</div>
+            <h2 class="section-title">Built work</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects by type">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="current" aria-pressed="false">Current<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="residential" aria-pressed="false">Residential<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="interiors" aria-pressed="false">Interiors<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="hospitality" aria-pressed="false">Hospitality &amp; Retail<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="civic" aria-pressed="false">Civic &amp; Aviation<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="industrial" aria-pressed="false">Industrial<span class="count"></span></button>
+          </div>
+        </div>
+        <div class="grid">
+          <article class="card" data-type="current ipd">
+            <div class="card-media placeholder">
+              <span>Photo coming soon</span>
+              <span class="year">2026</span>
+              <span class="logo"><img src="images/companies/9clark.jpg" alt="Clark Builders" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>CASA</h3>
+            <p class="card-desc">Integrated Project Delivery; rolled out PCS lean project controls</p>
+              <div class="card-meta"><span>Senior Project Manager</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="current">
+            <div class="card-media placeholder">
+              <span>Photo coming soon</span>
+              <span class="year">2026</span>
+              <span class="logo"><img src="images/companies/9clark.jpg" alt="Clark Builders" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Fernie BW</h3>
+              <div class="card-meta"><span>Senior Project Manager</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/12clark.jpg" alt="Attainable Homes" loading="lazy" width="500" height="333">
+              <span class="year">2023</span>
+              <span class="logo"><img src="images/companies/9clark.jpg" alt="Clark Builders" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Attainable Homes</h3>
+            <p class="card-desc">Multi-family residential</p>
+              <div class="card-meta"><span>Project Manager</span><span>Calgary, AB</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/11deveraux.jpeg" alt="Plaza Apartments" loading="lazy" width="500" height="333">
+              <span class="year">2021</span>
+              <span class="logo"><img src="images/companies/8deveraux.jpg" alt="Deveraux" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Plaza Apartments</h3>
+            <p class="card-desc">Multi-family residential</p>
+              <div class="card-meta"><span>Senior Project Manager</span><span>Calgary, AB</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/10scott.png" alt="Steps Bridgeland" loading="lazy" width="500" height="333">
+              <span class="year">2019</span>
+              <span class="logo"><img src="images/companies/2scott.jpg" alt="Scott Construction" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Steps Bridgeland</h3>
+            <p class="card-desc">Multi-family residential</p>
+              <div class="card-meta"><span>Project Manager</span><span>Calgary, AB</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="interiors">
+            <div class="card-media">
+              <img src="images/projectThumbnails/national.jpg" alt="National Block on 17th Ave" loading="lazy" width="500" height="333">
+              <span class="year">2017</span>
+              <span class="logo"><img src="images/companies/2scott.jpg" alt="Scott Construction" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>National Block on 17th Ave</h3>
+            <p class="card-desc">Envelope rehab and office fit-out</p>
+              <div class="card-meta"><span>Project Manager</span><span>Calgary, AB</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/8dawson.png" alt="The Windsor on Elbow Drive" loading="lazy" width="500" height="333">
+              <span class="year">2017</span>
+              <span class="logo"><img src="images/companies/7dawson.jpg" alt="Dawson Wallace" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>The Windsor on Elbow Drive</h3>
+            <p class="card-desc">Mixed-use, multi-family residential</p>
+              <div class="card-meta"><span>Project Manager</span><span>Calgary, AB</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="interiors">
+            <div class="card-media">
+              <img src="images/projectThumbnails/7omicron.jpeg" alt="WorkSafeBC Office" loading="lazy" width="500" height="333">
+              <span class="year">2015</span>
+              <span class="logo"><img src="images/companies/6omicron.jpg" alt="Omicron" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>WorkSafeBC Office</h3>
+            <p class="card-desc">Interior fit-out for corporate office</p>
+              <div class="card-meta"><span>Construction Manager</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="interiors">
+            <div class="card-media">
+              <img src="images/projectThumbnails/westernforest.jpeg" alt="Western Forest Products Office" loading="lazy" width="500" height="333">
+              <span class="year">2015</span>
+              <span class="logo"><img src="images/companies/6omicron.jpg" alt="Omicron" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Western Forest Products Office</h3>
+            <p class="card-desc">Interior fit-out for corporate office</p>
+              <div class="card-meta"><span>Construction Manager</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="hospitality">
+            <div class="card-media">
+              <img src="images/projectThumbnails/6magil.jpeg" alt="Dior Boutique at Hotel Vancouver" loading="lazy" width="500" height="333">
+              <span class="year">2014</span>
+              <span class="logo"><img src="images/companies/5magil.jpg" alt="Magil" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Dior Boutique at Hotel Vancouver</h3>
+            <p class="card-desc">Luxury retail</p>
+              <div class="card-meta"><span>Project Manager</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="interiors">
+            <div class="card-media">
+              <img src="images/projectThumbnails/5graham.jpg" alt="Golder Associates Office" loading="lazy" width="500" height="333">
+              <span class="year">2013</span>
+              <span class="logo"><img src="images/companies/4graham.jpg" alt="Graham" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Golder Associates Office</h3>
+            <p class="card-desc">Office tenant improvement</p>
+              <div class="card-meta"><span>Senior Project Coordinator</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="civic">
+            <div class="card-media">
+              <img src="images/projectThumbnails/yvr.jpg" alt="YVR Domestic Operations Centre" loading="lazy" width="500" height="333">
+              <span class="year">2012</span>
+              <span class="logo"><img src="images/companies/4graham.jpg" alt="Graham" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>YVR Domestic Operations Centre</h3>
+            <p class="card-desc">Vancouver Airport improvements</p>
+              <div class="card-meta"><span>Senior Project Coordinator</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="hospitality residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/4scott.jpg" alt="Hotel Georgia &amp; Residential Tower" loading="lazy" width="500" height="333">
+              <span class="year">2008</span>
+              <span class="logo"><img src="images/companies/2scott.jpg" alt="Scott Construction" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Hotel Georgia &amp; Residential Tower</h3>
+            <p class="card-desc">48-storey high-rise</p>
+              <div class="card-meta"><span>Assistant Project Manager</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="civic">
+            <div class="card-media">
+              <img src="images/projectThumbnails/fort-nelson-ice-arena.jpeg" alt="Northern Rockies Recreation Centre" loading="lazy" width="500" height="333">
+              <span class="year">2007</span>
+              <span class="logo"><img src="images/companies/3perma.jpg" alt="Permasteel" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Northern Rockies Recreation Centre</h3>
+            <p class="card-desc">Ice hockey arena</p>
+              <div class="card-meta"><span>Project Manager</span><span>Fort Nelson, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="industrial">
+            <div class="card-media">
+              <img src="images/projectThumbnails/3perma.jpg" alt="Axton Industrial Custom Fabrications" loading="lazy" width="500" height="333">
+              <span class="year">2007</span>
+              <span class="logo"><img src="images/companies/3perma.jpg" alt="Permasteel" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Axton Industrial Custom Fabrications</h3>
+            <p class="card-desc">Industrial building</p>
+              <div class="card-meta"></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/tribecalofts.jpeg" alt="Tribeca Lofts Yaletown" loading="lazy" width="500" height="333">
+              <span class="year">2005</span>
+              <span class="logo"><img src="images/companies/1ledcor.jpg" alt="Ledcor" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Tribeca Lofts Yaletown</h3>
+            <p class="card-desc">Luxury lofts</p>
+              <div class="card-meta"><span>Project Coordinator</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/2hgledcor.png" alt="Two Harbour Green" loading="lazy" width="500" height="333">
+              <span class="year">2005</span>
+              <span class="logo"><img src="images/companies/1ledcor.jpg" alt="Ledcor" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>Two Harbour Green</h3>
+            <p class="card-desc">Luxury high-rise</p>
+              <div class="card-meta"><span>Project Coordinator</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+          <article class="card" data-type="residential">
+            <div class="card-media">
+              <img src="images/projectThumbnails/2ledcor.jpg" alt="One Harbour Green" loading="lazy" width="500" height="333">
+              <span class="year">2004</span>
+              <span class="logo"><img src="images/companies/1ledcor.jpg" alt="Ledcor" loading="lazy" width="48" height="48"></span>
+            </div>
+            <div class="card-body">
+              <h3>One Harbour Green</h3>
+            <p class="card-desc">Luxury high-rise</p>
+              <div class="card-meta"><span>Project Coordinator</span><span>Vancouver, BC</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach dark" id="approach">
+      <div class="wrap">
+        <div class="approach-head reveal">
+          <div class="eyebrow">How I run projects</div>
+          <h2 class="section-title">Collaborative delivery, controlled with data.</h2>
+        </div>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5M10 20c0-3 3-5 6-5s6 2 6 5"/></svg>
+            <h3>Integrated Project Delivery</h3>
+            <p>Owner, designers and trades working as one team with shared goals.</p>
+          </div>
+          <div class="pillar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 4l-5 5-3-3-4 4"/></svg>
+            <h3>Lean project controls</h3>
+            <p>Pull planning and PCS-style controls that make progress visible every week.</p>
+          </div>
+          <div class="pillar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l8 4-8 4-8-4 8-4z"/><path d="M6 9v5c0 2 3 3 6 3s6-1 6-3V9"/></svg>
+            <h3>Leadership &amp; mentoring</h3>
+            <p>Growing the next generation of project managers on every job.</p>
+          </div>
+          <div class="pillar">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg>
+            <h3>Construction tech</h3>
+            <p>Turner's platforms — SAP, T4 and P6 scheduling — plus the Weekly Work Plan app.</p>
+          </div>
+        </div>
+        <div class="toolbox reveal">
+          <span class="toolbox-label">Toolbox</span>
+          <span class="tool">SAP</span><span class="tool">T4</span><span class="tool">Primavera P6</span><span class="tool">Weekly Work Plan</span><span class="tool">Procore</span><span class="tool">Bluebeam</span><span class="tool">PCS</span><span class="tool">HTML</span><span class="tool">CSS</span><span class="tool">JavaScript</span><span class="tool">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap reveal">
+        <div class="about-head">
+          <div class="eyebrow">About</div>
+          <h2 class="section-title">Builder by trade, coder by curiosity.</h2>
+        </div>
+        <div class="about-body">
+          <p>I started in Vancouver in 2004 on residential towers like One and Two Harbour Green, then moved through hospitality, aviation, retail and office interiors before settling in Calgary.</p>
+          <p>Today I'm a Senior Project Manager at Clark Builders, part of Turner, working on IPD and lean projects and mentoring the PMs around me. I built this site myself while learning to code.</p>
+          <div class="companies" aria-label="Builders I've worked with">
+          <img src="images/companies/1ledcor.jpg" alt="Ledcor" title="Ledcor" loading="lazy" width="64" height="64">
+          <img src="images/companies/2scott.jpg" alt="Scott Construction" title="Scott Construction" loading="lazy" width="64" height="64">
+          <img src="images/companies/3perma.jpg" alt="Permasteel" title="Permasteel" loading="lazy" width="64" height="64">
+          <img src="images/companies/4graham.jpg" alt="Graham" title="Graham" loading="lazy" width="64" height="64">
+          <img src="images/companies/5magil.jpg" alt="Magil" title="Magil" loading="lazy" width="64" height="64">
+          <img src="images/companies/6omicron.jpg" alt="Omicron" title="Omicron" loading="lazy" width="64" height="64">
+          <img src="images/companies/7dawson.jpg" alt="Dawson Wallace" title="Dawson Wallace" loading="lazy" width="64" height="64">
+          <img src="images/companies/8deveraux.jpg" alt="Deveraux" title="Deveraux" loading="lazy" width="64" height="64">
+          <img src="images/companies/9clark.jpg" alt="Clark Builders" title="Clark Builders" loading="lazy" width="64" height="64">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Let's build something.</h2>
+        <div class="contact-actions">
+          <a class="btn btn-dark" data-email="show" href="#contact">peter.zay [at] gmail.com</a>
+          <a class="btn btn-light" href="https://www.linkedin.com/in/peter-zay" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline" href="https://github.com/peter-zay" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Made in Calgary by Peter Zay · <span id="year">2026</span></span>
+      <span>Hand-coded · hosted on GitHub Pages</span>
+    </div>
   </footer>
 
-  <!-- LInking external JS file -->
-  <script src="script.js"></script>
+  <script src="assets/site.js"></script>
+</body>
 </html>
