@@ -137,6 +137,20 @@ p { margin: 0; }
 .toolbox-label { font-size: 14px; color: #9aa0a8; padding-right: 6px; }
 .tool { border: 1px solid #3a3e45; padding: 8px 14px; border-radius: 999px; font-size: 14px; }
 
+/* Career timeline */
+.career .wrap { padding-top: 96px; padding-bottom: 32px; }
+.career-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 36px; }
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.tl-item { display: flex; gap: 16px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+.tl-item:first-child { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.tl-logo { width: 48px; height: 48px; border-radius: 10px; border: 1px solid var(--line); object-fit: contain; background: #fff; flex: none; }
+.tl-edu .tl-logo { object-fit: cover; }
+.tl-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.tl-dates { font-family: var(--head); font-weight: 600; font-size: 14px; color: var(--accent-text); }
+.tl-body h3 { font-size: 18px; }
+.tl-co { font-size: 14px; color: var(--muted); }
+.tl-proj { font-size: 14px; color: #3e434a; padding-top: 4px; }
+
 /* About */
 .about .wrap { display: flex; flex-wrap: wrap; gap: 56px; padding-top: 96px; padding-bottom: 96px; }
 .about-head { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
