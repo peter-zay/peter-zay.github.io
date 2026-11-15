@@ -31,6 +31,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
+  // Visitor counter (GoatCounter). Set data-goatcounter="yourcode" on <body> to turn it on.
+  const gc = document.body.dataset.goatcounter;
+  if (gc) {
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://gc.zgo.at/count.js';
+    tag.dataset.goatcounter = `https://${gc}.goatcounter.com/count`;
+    document.head.appendChild(tag);
+    fetch(`https://${gc}.goatcounter.com/counter/TOTAL.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        const el = document.getElementById('visits');
+        if (d && d.count && el) { el.textContent = ` · ${d.count} visitors`; el.hidden = false; }
+      })
+      .catch(() => {});
+  }
+
   // Reveal on scroll
   const items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
