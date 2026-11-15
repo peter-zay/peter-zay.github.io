@@ -141,6 +141,11 @@ p { margin: 0; }
 .about .wrap { display: flex; flex-wrap: wrap; gap: 56px; padding-top: 96px; padding-bottom: 96px; }
 .about-head { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
 .about-body { flex: 999 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.7; color: #3e434a; }
+.edu { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.edu img { width: 140px; height: 96px; object-fit: cover; border-radius: 10px; flex: none; }
+.edu > div { flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.edu h3 { font-size: 19px; color: var(--ink); }
+.edu p { font-size: 15px; line-height: 1.5; color: var(--muted); }
 .companies { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 10px; }
 .companies img { width: 64px; height: 64px; border-radius: 12px; border: 1px solid var(--line); background: #fff; object-fit: contain; }
 
