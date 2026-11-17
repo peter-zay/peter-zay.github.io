@@ -60,6 +60,8 @@ p { margin: 0; }
 .btn-light { background: #fff; color: var(--ink); }
 .btn-light:hover { color: var(--ink); }
 .btn-outline { border: 2px solid var(--ink); color: var(--ink); }
+.btn-card { color: #fff; border: 1px solid #4a5058; background: repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px), linear-gradient(135deg, #3b4148, #23272c 45%, #4a5058 70%, #1d2024); box-shadow: inset 0 1px 0 rgba(255,255,255,.18); }
+.btn-card:hover { color: #fff; }
 .btn-outline:hover { color: var(--ink); background: rgba(255,255,255,.3); }
 
 /* Hero */
