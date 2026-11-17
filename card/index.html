@@ -238,7 +238,8 @@
     const stage = card.parentElement;
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function flip() { card.classList.toggle('flipped'); }
+    let flipping = false;
+    function flip() { flipping = true; card.classList.remove('tracking'); card.classList.toggle('flipped'); setTimeout(() => { flipping = false; }, 750); }
     card.addEventListener('click', flip);
     card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
 
@@ -253,7 +254,7 @@
     }
     stage.addEventListener('pointermove', e => {
       const r = stage.getBoundingClientRect();
-      card.classList.add('tracking');
+      if (!flipping) card.classList.add('tracking');
       setLight((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
     });
     stage.addEventListener('pointerleave', () => {
