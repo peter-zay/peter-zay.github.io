@@ -46,6 +46,7 @@ p { margin: 0; }
 .nav-links .nav-cta:hover { background: var(--accent); color: var(--ink); }
 .nav-links .nav-btn { border: 1px solid #4a4f57; color: #fff; font-weight: 600; font-size: 14px; padding: 10px 17px; border-radius: 8px; }
 .nav-links .nav-btn:hover, .nav-links .nav-btn[aria-current="page"] { border-color: var(--accent); color: #fff; }
+.nav-links .nav-card { border-color: #4a5058; background: repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px), linear-gradient(135deg, #3b4148, #23272c 45%, #4a5058 70%, #1d2024); box-shadow: inset 0 1px 0 rgba(255,255,255,.18); }
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 26px; border-radius: 10px; font-weight: 600; font-size: 16px; text-decoration: none; transition: transform .15s ease, background .15s ease; }

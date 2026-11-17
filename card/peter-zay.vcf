@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Zay;Peter;;;
+FN:Peter Zay
+ORG:Clark Builders
+TITLE:Senior Project Manager
+EMAIL;TYPE=INTERNET,WORK:peter.zay@gmail.com
+URL:https://peter-zay.github.io/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/peter-zay
+ADR;TYPE=WORK:;;;Calgary;AB;;Canada
+END:VCARD
