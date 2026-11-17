@@ -83,13 +83,6 @@
     /* front */
     .front { display: grid; grid-template-columns: 1fr auto; padding: 7% 7% 7% 9%; }
     .front .top { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-start; }
-    .photo {
-      width: clamp(52px, 13vw, 72px); height: clamp(52px, 13vw, 72px); flex: none; border-radius: 50%; display: block;
-      background: #16181B url(../images/headshot-card.jpg) center / cover no-repeat;
-      -webkit-backface-visibility: hidden; backface-visibility: hidden;
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 0 3px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.4), 0 4px 10px rgba(0,0,0,.45);
-    }
     .mark {
       width: clamp(42px, 11vw, 60px); aspect-ratio: 1; border-radius: 10px; display: grid; place-items: center;
       font-family: var(--head); font-weight: 700; font-size: clamp(17px, 4.4vw, 24px); color: var(--ink);
@@ -189,7 +182,7 @@
       <div class="face front">
         <span class="screw s1" aria-hidden="true"></span><span class="screw s2" aria-hidden="true"></span><span class="screw s3" aria-hidden="true"></span><span class="screw s4" aria-hidden="true"></span>
         <div class="top">
-          <span class="photo" aria-hidden="true"></span>
+          <div class="mark" aria-hidden="true">PZ</div>
           <div class="loc engrave">Calgary · Alberta<br>Canada</div>
         </div>
         <div class="who">
