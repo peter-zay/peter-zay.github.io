@@ -110,6 +110,43 @@
     .back-text .small { font-size: clamp(10px, 2.5vw, 13px); }
     .back-text .url { font-family: var(--head); font-size: clamp(10px, 2.5vw, 13px); color: var(--accent); letter-spacing: .02em; }
 
+
+    /* screws */
+    .screw { position: absolute; width: 11px; height: 11px; border-radius: 50%; z-index: 2;
+      background: radial-gradient(circle at 35% 30%, #e6e9ec, #8d949c 45%, #3a3f45 80%);
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.15); }
+    .screw::before, .screw::after { content: ""; position: absolute; left: 50%; top: 50%; width: 6px; height: 1.5px; margin: -.75px 0 0 -3px; background: rgba(20,22,25,.75); }
+    .screw::before { transform: rotate(45deg); } .screw::after { transform: rotate(-45deg); }
+    .s1 { top: 12px; left: 16px; } .s2 { top: 12px; right: 12px; } .s3 { bottom: 12px; left: 16px; } .s4 { bottom: 12px; right: 12px; }
+    .etch { position: absolute; left: 9%; right: 9%; bottom: 3.6%; text-align: center; font-size: clamp(7px, 1.7vw, 9.5px); letter-spacing: .06em; opacity: .75; }
+    .front { padding-bottom: 9.5%; }
+
+    /* back: title block */
+    .tb { flex: 1; min-width: 0; align-self: stretch; display: grid; grid-template-rows: auto auto auto 1fr; border: 1px solid rgba(255,255,255,.22); border-radius: 4px; box-shadow: inset 0 1px 0 rgba(0,0,0,.4); }
+    .tb > div { padding: 5% 6%; border-bottom: 1px solid rgba(255,255,255,.16); min-width: 0; }
+    .tb > div:last-child { border-bottom: 0; display: flex; flex-direction: column; justify-content: flex-end; }
+    .tb .k { display: block; font-size: clamp(7px, 1.7vw, 9.5px); color: #9aa2ab; letter-spacing: .04em; }
+    .tb .v { display: block; font-size: clamp(10px, 2.5vw, 13px); }
+    .tb .v.big { font-family: var(--head); font-weight: 700; font-size: clamp(15px, 4vw, 22px); line-height: 1.1; }
+    .tb-grid { display: grid; grid-template-columns: repeat(3, 1fr); padding: 0 !important; }
+    .tb-grid > div { padding: 9% 12%; border-right: 1px solid rgba(255,255,255,.16); }
+    .tb-grid > div:last-child { border-right: 0; }
+    .back { padding: 6% 7% 6% 9%; gap: 6%; }
+    .qr-plate { height: 86%; }
+
+    /* on site now */
+    .onsite { width: min(560px, 100%); margin-top: -8px; padding: 18px 20px; border-radius: 12px; border: 1px solid #3a3f46;
+      background: repeating-linear-gradient(90deg, rgba(255,255,255,.02) 0 1px, transparent 1px 3px), linear-gradient(180deg, #23272c, #1a1d21);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08); display: flex; flex-direction: column; gap: 6px; }
+    .os-top { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #9aa0a8; }
+    .os-dot { width: 8px; height: 8px; border-radius: 50%; background: #4cc38a; box-shadow: 0 0 0 3px rgba(76,195,138,.18); }
+    .os-name { font-family: var(--head); font-weight: 700; font-size: 20px; color: #fff; }
+    .os-sub { font-size: 14px; color: #c9cdd2; }
+    .os-bar { position: relative; height: 8px; margin-top: 8px; border-radius: 2px; background: #2e3238; overflow: hidden; }
+    .os-bar span { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent); transition: width 1s cubic-bezier(.2,.7,.2,1); }
+    .os-meta { display: flex; justify-content: space-between; font-size: 12px; color: #9aa0a8; font-variant-numeric: tabular-nums; }
+    .os-meta strong { color: #fff; font-weight: 600; }
+
     .hint { font-size: 13px; color: #8d949c; margin-top: -14px; }
 
     /* actions */
@@ -126,7 +163,7 @@
     .btn:focus-visible, .card:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
     .email-line { font-size: 14px; color: #9aa0a8; text-align: center; }
     .email-line strong { color: #e8eaed; font-weight: 600; }
-    @media (max-width: 640px) { body { padding-top: 64px; justify-content: flex-start; } }
+    @media (max-width: 640px) { body { padding-top: 64px; justify-content: flex-start; } .os-meta { flex-wrap: wrap; } .os-meta #osPct { order: -1; width: 100%; padding-bottom: 2px; } }
     .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px); opacity: 0; background: #fff; color: var(--ink); padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all .25s ease; pointer-events: none; }
     .toast.show { opacity: 1; transform: translateX(-50%); }
 
@@ -142,6 +179,7 @@
   <div class="stage">
     <div class="card" id="card" tabindex="0" role="button" aria-label="Business card for Peter Zay. Press to flip and see the QR code.">
       <div class="face front">
+        <span class="screw s1" aria-hidden="true"></span><span class="screw s2" aria-hidden="true"></span><span class="screw s3" aria-hidden="true"></span><span class="screw s4" aria-hidden="true"></span>
         <div class="top">
           <div class="mark" aria-hidden="true">PZ</div>
           <div class="loc engrave">Calgary · Alberta<br>Canada</div>
@@ -157,18 +195,29 @@
           <span>linkedin.com/in/peter-zay</span>
           <span>peter-zay.github.io</span>
         </div>
+        <div class="etch engrave">Building since 2004 in British Columbia and Alberta</div>
       </div>
       <div class="face back" aria-hidden="true">
+        <span class="screw s1"></span><span class="screw s2"></span><span class="screw s3"></span><span class="screw s4"></span>
         <div class="qr-plate"><svg viewBox="0 0 29 29" class="qr" role="img" aria-label="QR code linking to peter-zay.github.io/card" shape-rendering="crispEdges"><path d="M0 0h1v1h-1zM1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM6 0h1v1h-1zM10 0h1v1h-1zM12 0h1v1h-1zM13 0h1v1h-1zM16 0h1v1h-1zM19 0h1v1h-1zM22 0h1v1h-1zM23 0h1v1h-1zM24 0h1v1h-1zM25 0h1v1h-1zM26 0h1v1h-1zM27 0h1v1h-1zM28 0h1v1h-1zM0 1h1v1h-1zM6 1h1v1h-1zM9 1h1v1h-1zM11 1h1v1h-1zM12 1h1v1h-1zM13 1h1v1h-1zM14 1h1v1h-1zM15 1h1v1h-1zM17 1h1v1h-1zM18 1h1v1h-1zM22 1h1v1h-1zM28 1h1v1h-1zM0 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM10 2h1v1h-1zM11 2h1v1h-1zM12 2h1v1h-1zM13 2h1v1h-1zM16 2h1v1h-1zM17 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM28 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM11 3h1v1h-1zM13 3h1v1h-1zM14 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM28 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM13 4h1v1h-1zM14 4h1v1h-1zM16 4h1v1h-1zM18 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM28 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM9 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM14 5h1v1h-1zM17 5h1v1h-1zM19 5h1v1h-1zM20 5h1v1h-1zM22 5h1v1h-1zM28 5h1v1h-1zM0 6h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM12 7h1v1h-1zM14 7h1v1h-1zM17 7h1v1h-1zM20 7h1v1h-1zM0 8h1v1h-1zM3 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM8 8h1v1h-1zM9 8h1v1h-1zM12 8h1v1h-1zM15 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM21 8h1v1h-1zM23 8h1v1h-1zM2 9h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM7 9h1v1h-1zM8 9h1v1h-1zM9 9h1v1h-1zM14 9h1v1h-1zM15 9h1v1h-1zM20 9h1v1h-1zM22 9h1v1h-1zM25 9h1v1h-1zM28 9h1v1h-1zM2 10h1v1h-1zM6 10h1v1h-1zM7 10h1v1h-1zM9 10h1v1h-1zM12 10h1v1h-1zM17 10h1v1h-1zM19 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM25 10h1v1h-1zM26 10h1v1h-1zM27 10h1v1h-1zM0 11h1v1h-1zM2 11h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM10 11h1v1h-1zM11 11h1v1h-1zM12 11h1v1h-1zM14 11h1v1h-1zM15 11h1v1h-1zM19 11h1v1h-1zM20 11h1v1h-1zM21 11h1v1h-1zM22 11h1v1h-1zM23 11h1v1h-1zM26 11h1v1h-1zM27 11h1v1h-1zM1 12h1v1h-1zM5 12h1v1h-1zM6 12h1v1h-1zM8 12h1v1h-1zM12 12h1v1h-1zM16 12h1v1h-1zM17 12h1v1h-1zM19 12h1v1h-1zM20 12h1v1h-1zM22 12h1v1h-1zM25 12h1v1h-1zM27 12h1v1h-1zM28 12h1v1h-1zM0 13h1v1h-1zM2 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM10 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM19 13h1v1h-1zM20 13h1v1h-1zM21 13h1v1h-1zM1 14h1v1h-1zM2 14h1v1h-1zM3 14h1v1h-1zM4 14h1v1h-1zM5 14h1v1h-1zM6 14h1v1h-1zM8 14h1v1h-1zM10 14h1v1h-1zM12 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM21 14h1v1h-1zM23 14h1v1h-1zM24 14h1v1h-1zM25 14h1v1h-1zM26 14h1v1h-1zM27 14h1v1h-1zM28 14h1v1h-1zM0 15h1v1h-1zM1 15h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM18 15h1v1h-1zM20 15h1v1h-1zM25 15h1v1h-1zM27 15h1v1h-1zM0 16h1v1h-1zM1 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM9 16h1v1h-1zM10 16h1v1h-1zM11 16h1v1h-1zM12 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM15 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM20 16h1v1h-1zM21 16h1v1h-1zM23 16h1v1h-1zM27 16h1v1h-1zM1 17h1v1h-1zM3 17h1v1h-1zM4 17h1v1h-1zM5 17h1v1h-1zM8 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM17 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM25 17h1v1h-1zM28 17h1v1h-1zM0 18h1v1h-1zM2 18h1v1h-1zM4 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM9 18h1v1h-1zM10 18h1v1h-1zM13 18h1v1h-1zM16 18h1v1h-1zM17 18h1v1h-1zM20 18h1v1h-1zM23 18h1v1h-1zM24 18h1v1h-1zM27 18h1v1h-1zM28 18h1v1h-1zM2 19h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM5 19h1v1h-1zM9 19h1v1h-1zM13 19h1v1h-1zM15 19h1v1h-1zM17 19h1v1h-1zM18 19h1v1h-1zM19 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM0 20h1v1h-1zM2 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM9 20h1v1h-1zM14 20h1v1h-1zM16 20h1v1h-1zM18 20h1v1h-1zM19 20h1v1h-1zM20 20h1v1h-1zM21 20h1v1h-1zM22 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM16 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM24 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM28 21h1v1h-1zM0 22h1v1h-1zM1 22h1v1h-1zM2 22h1v1h-1zM3 22h1v1h-1zM4 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM9 22h1v1h-1zM11 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM17 22h1v1h-1zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h1v1h-1zM27 22h1v1h-1zM0 23h1v1h-1zM6 23h1v1h-1zM8 23h1v1h-1zM10 23h1v1h-1zM13 23h1v1h-1zM18 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM24 23h1v1h-1zM25 23h1v1h-1zM26 23h1v1h-1zM0 24h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM10 24h1v1h-1zM12 24h1v1h-1zM14 24h1v1h-1zM17 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM28 24h1v1h-1zM0 25h1v1h-1zM2 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM6 25h1v1h-1zM8 25h1v1h-1zM9 25h1v1h-1zM10 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM13 25h1v1h-1zM14 25h1v1h-1zM17 25h1v1h-1zM19 25h1v1h-1zM22 25h1v1h-1zM23 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM27 25h1v1h-1zM0 26h1v1h-1zM2 26h1v1h-1zM3 26h1v1h-1zM4 26h1v1h-1zM6 26h1v1h-1zM11 26h1v1h-1zM13 26h1v1h-1zM18 26h1v1h-1zM20 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM28 26h1v1h-1zM0 27h1v1h-1zM6 27h1v1h-1zM15 27h1v1h-1zM17 27h1v1h-1zM18 27h1v1h-1zM20 27h1v1h-1zM21 27h1v1h-1zM23 27h1v1h-1zM27 27h1v1h-1zM0 28h1v1h-1zM1 28h1v1h-1zM2 28h1v1h-1zM3 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM9 28h1v1h-1zM10 28h1v1h-1zM13 28h1v1h-1zM17 28h1v1h-1zM20 28h1v1h-1zM21 28h1v1h-1zM24 28h1v1h-1zM27 28h1v1h-1z"/></svg></div>
-        <div class="back-text">
-          <div class="big chrome">Scan to<br>connect</div>
-          <div class="small engrave">Contact, LinkedIn and<br>project portfolio</div>
-          <div class="url">peter-zay.github.io/card</div>
+        <div class="tb">
+          <div><span class="k">Project</span><span class="v big chrome">Peter Zay</span></div>
+          <div><span class="k">Discipline</span><span class="v engrave">Construction project management</span></div>
+          <div class="tb-grid"><div><span class="k">Sheet</span><span class="v engrave">PZ-001</span></div><div><span class="k">Rev</span><span class="v engrave">2026</span></div><div><span class="k">Scale</span><span class="v engrave">1:1</span></div></div>
+          <div><span class="k">Scan to connect</span><span class="v url">peter-zay.github.io/card</span></div>
         </div>
       </div>
     </div>
   </div>
   <div class="hint">Tap the card to flip it</div>
+
+  <section class="onsite" aria-label="Current project">
+    <div class="os-top"><span class="os-dot" aria-hidden="true"></span>On site now</div>
+    <div class="os-name">CASA House Calgary</div>
+    <div class="os-sub">Youth mental health centre, delivered through Integrated Project Delivery</div>
+    <div class="os-bar" role="img" id="osBar" aria-label="Construction schedule elapsed"><span id="osFill"></span></div>
+    <div class="os-meta"><span>Spring 2026</span><span id="osPct">Construction schedule elapsed</span><span>Jul 2027 (est.)</span></div>
+  </section>
 
   <div class="actions">
     <a class="btn btn-accent" href="peter-zay.vcf" download="Peter-Zay.vcf">
@@ -220,6 +269,15 @@
       card.style.setProperty('--mx', (px * 100) + '%');
       card.style.setProperty('--my', (py * 100) + '%');
     });
+
+    // on-site strip: share of the construction schedule elapsed today
+    (() => {
+      const start = new Date(2026, 3, 1), end = new Date(2027, 6, 31), now = new Date();
+      const pct = Math.round(Math.min(1, Math.max(0, (now - start) / (end - start))) * 100);
+      document.getElementById('osPct').innerHTML = '<strong>' + pct + '%</strong> of construction schedule elapsed';
+      document.getElementById('osBar').setAttribute('aria-label', pct + '% of construction schedule elapsed');
+      requestAnimationFrame(() => { document.getElementById('osFill').style.width = pct + '%'; });
+    })();
 
     const toast = document.getElementById('toast');
     function say(msg) { toast.textContent = msg; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1800); }
