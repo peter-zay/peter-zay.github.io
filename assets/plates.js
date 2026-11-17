@@ -26,9 +26,10 @@
   if (fill) {
     const start = new Date(2026, 3, 1), end = new Date(2027, 6, 31), now = new Date();
     const pct = Math.round(Math.min(1, Math.max(0, (now - start) / (end - start))) * 100);
-    document.getElementById('osPct').innerHTML = '<strong>' + pct + '%</strong> of construction schedule elapsed';
-    document.getElementById('osBar').setAttribute('aria-label', pct + '% of construction schedule elapsed');
-    const go = () => requestAnimationFrame(() => { fill.style.width = pct + '%'; });
+    const today = document.getElementById('osToday');
+    document.getElementById('osNum').textContent = pct + '%';
+    document.getElementById('osBar').setAttribute('aria-label', pct + '% of the construction schedule has elapsed');
+    const go = () => requestAnimationFrame(() => { fill.style.width = pct + '%'; today.style.left = pct + '%'; today.style.opacity = 1; });
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { go(); io.disconnect(); } });
       io.observe(fill);
