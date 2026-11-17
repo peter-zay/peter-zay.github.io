@@ -1,0 +1,48 @@
+/* Construction-themed proposals (preview) */
+:root {
+  --steel: repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px), linear-gradient(135deg, #3b4148, #23272c 45%, #4a5058 70%, #1d2024);
+  --steel-edge: inset 0 1px 0 rgba(255,255,255,.18), inset 0 -1px 0 rgba(0,0,0,.45);
+}
+
+/* 4. Drawing grid lines with bubbles in the hero */
+.hero { position: relative; overflow: hidden; background-image: none; }
+.hero .wrap { position: relative; z-index: 1; }
+.gridlines { position: absolute; inset: 0; pointer-events: none; }
+.gl { position: absolute; }
+.gl.v { top: 44px; bottom: 0; left: var(--p); width: 1px;
+  background: repeating-linear-gradient(180deg, rgba(255,255,255,.13) 0 22px, transparent 22px 28px, rgba(255,255,255,.13) 28px 31px, transparent 31px 37px); }
+.gl.h { left: 44px; right: 0; top: var(--p); height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,.13) 0 22px, transparent 22px 28px, rgba(255,255,255,.13) 28px 31px, transparent 31px 37px); }
+.gl b { position: absolute; width: 28px; height: 28px; border: 1px solid rgba(255,255,255,.28); border-radius: 50%;
+  display: grid; place-items: center; font: 600 12px var(--head); color: #8d949c; background: var(--ink); }
+.gl.v b { top: -36px; left: -14px; }
+.gl.h b { left: -36px; top: -14px; }
+
+/* 5. Dimension line */
+.dim { display: flex; align-items: center; gap: 12px; color: var(--muted); font: 600 14px var(--head); padding-bottom: 6px; max-width: 720px; }
+.dim-line { position: relative; flex: 1; height: 1px; background: currentColor; }
+.dim-line::before, .dim-line::after { content: ""; position: absolute; top: -7px; width: 1px; height: 15px; background: currentColor; transform: skewX(-40deg); }
+.dim-line::before { left: 0; }
+.dim-line::after { right: 0; }
+.dim-label { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); line-height: 1; background: var(--paper); padding: 0 10px; font-weight: 500; font-family: var(--body); white-space: nowrap; }
+
+/* 6. Project cards as drawing sheets: title block */
+.card-media { border-bottom: 1px solid var(--line); }
+.tblock { margin: auto 0 0; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #cfcac0; font-size: 13px; }
+.tblock > div { padding: 6px 10px 7px; border-right: 1px solid #cfcac0; border-bottom: 1px solid #cfcac0; min-width: 0; }
+.tblock > div:nth-child(2n) { border-right: 0; }
+.tblock > div:nth-last-child(-n+2):nth-child(odd), .tblock > div:last-child { border-bottom: 0; }
+.tblock dt { font-size: 11px; color: var(--muted); line-height: 1.3; }
+.tblock dd { margin: 0; font-weight: 600; color: var(--ink); line-height: 1.35; overflow-wrap: anywhere; }
+.card-body { gap: 10px; }
+
+/* 7. Gunmetal for buttons and menu buttons */
+.btn-ghost, .btn-dark, .nav-links .nav-btn { background: var(--steel); border: 1px solid #4a5058; color: #fff; box-shadow: var(--steel-edge); }
+.btn-ghost:hover, .btn-dark:hover, .nav-links .nav-btn:hover { border-color: #8d949c; color: #fff; }
+.chip[aria-pressed="true"] { background: var(--steel); border-color: #4a5058; box-shadow: var(--steel-edge); }
+
+/* 8. Tools as machined badges */
+.tool { position: relative; border-radius: 4px; border: 1px solid #4a5058; background: var(--steel); box-shadow: var(--steel-edge);
+  padding: 9px 16px 9px 26px; font-weight: 600; letter-spacing: .01em; color: #e3e6ea; text-shadow: 0 -1px 0 rgba(0,0,0,.6); }
+.tool i { position: absolute; left: 10px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #d9dde2, #6a717a 60%, #2a2e33); box-shadow: 0 1px 0 rgba(255,255,255,.1); }
