@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
   <link rel="stylesheet" href="assets/gantt.css">
+  <link rel="stylesheet" href="assets/plates.css">
+  <link rel="stylesheet" href="assets/gantt-steel.css">
 </head>
 <body class="gantt-page" data-goatcounter="peterzay">
   <a class="skip" href="#main">Skip to content</a>
@@ -68,6 +70,7 @@
 
     <section class="g-chart-wrap" aria-label="Career Gantt chart">
       <p class="g-swipe">Swipe the chart sideways to see the timeline.</p>
+      <div class="g-plate plate">
       <div class="g-scroll" tabindex="0" aria-label="Career Gantt chart, scrolls sideways">
         <table class="gantt" style="--today:95.689%">
           <colgroup><col class="w-name"><col class="w-d"><col class="w-d"><col class="w-d"><col></colgroup>
@@ -244,6 +247,7 @@
           </tbody>
         </table>
       </div>
+      </div>
       <p class="g-note">Project start and finish months are approximate. ~ marks an estimated finish.</p>
     </section>
   </main>
@@ -257,5 +261,6 @@
 
   <script src="assets/site.js"></script>
   <script src="assets/gantt.js"></script>
+  <script src="assets/plates.js"></script>
 </body>
 </html>

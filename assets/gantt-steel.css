@@ -1,0 +1,36 @@
+/* Peter's Gantt — gunmetal theme */
+.gantt-page .g-head h1 {
+  background: linear-gradient(180deg, #ffffff 0%, #c9d0d8 45%, #8d959f 55%, #e9edf1 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 2px 0 rgba(0,0,0,.6));
+}
+.gantt-page .g-head { background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 40px 40px; }
+
+/* Buttons and legend as machined parts */
+.gantt-page .g-btn { border-radius: 8px; border: 1px solid #4a5058; box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.45);
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px), linear-gradient(135deg, #3b4148, #23272c 45%, #4a5058 70%, #1d2024); }
+.gantt-page .g-btn:hover { border-color: #8d949c; }
+
+/* The chart is bolted to a gunmetal plate */
+.g-plate { padding: 30px 26px 22px; border-radius: 14px; }
+.g-plate:hover { transform: none; }
+.g-plate .g-scroll { border-top: 2px solid #c9d0d8; }
+.g-plate { --g-bg: #262a2f; --g-row: #2d3238; --g-line: rgba(255,255,255,.08); --g-grid: rgba(255,255,255,.06); }
+.g-plate .gantt .c-name { background: #262a2f; }
+.g-plate .sum .c-name { background: #2d3238; }
+.g-plate .sum th, .g-plate .sum td { background-color: rgba(255,255,255,.035); }
+.g-plate .gantt th, .g-plate .gantt td { border-bottom-color: rgba(0,0,0,.35); box-shadow: inset 0 -1px 0 rgba(255,255,255,.03); }
+.g-plate .g-note { color: #9aa0a8; }
+
+/* Bars: polished steel summaries, anodized task bars */
+.g-plate .bar.summary { background: linear-gradient(180deg, #ffffff, #c3cad2 50%, #8d959f); box-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.g-plate .bar.summary::before, .g-plate .bar.summary::after { border-top-color: #a9b0b8; }
+.g-plate .g-now .bar.summary { background: linear-gradient(180deg, #ffc08a, var(--g-now) 50%, #c95f17); }
+.g-plate .g-now .bar.summary::before, .g-plate .g-now .bar.summary::after { border-top-color: #e07a28; }
+.g-plate .g-edu .bar.summary { background: linear-gradient(180deg, #fbe39a, var(--g-base) 50%, #b8961f); }
+.g-plate .bar.task-bar { background: linear-gradient(180deg, #8fb2d1, #5b84a8 50%, #3e6487); box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 1px 2px rgba(0,0,0,.5); }
+.g-plate .bar.crit { background: linear-gradient(180deg, #f08a82, #e0483d 50%, #a8281f); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 2px rgba(0,0,0,.5); }
+.g-plate .ms { background: linear-gradient(135deg, #fbe39a, var(--g-base) 50%, #b8961f); box-shadow: 0 1px 2px rgba(0,0,0,.5); }
+
+@media (max-width: 720px) {
+  .g-plate { padding: 24px 14px 16px; border-radius: 10px; }
+}

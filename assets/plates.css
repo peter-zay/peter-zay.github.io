@@ -1,0 +1,88 @@
+/* Gunmetal plates: brushed steel, corner screws, light that follows the pointer */
+.plate {
+  --mx: 30%; --my: 0%;
+  position: relative; isolation: isolate; overflow: hidden; color: #e8eaed;
+  border: 1px solid #4a5058; border-radius: 12px;
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,.06) 0 2px, transparent 2px 5px),
+    linear-gradient(135deg, #3b4148 0%, #23272c 30%, #41474f 55%, #1d2024 80%, #33383f 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.5), 0 18px 36px -18px rgba(0,0,0,.7);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.plate::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; mix-blend-mode: screen;
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.20), rgba(255,255,255,.04) 30%, transparent 55%),
+    linear-gradient(115deg, transparent 38%, rgba(190,210,230,.12) 47%, rgba(255,255,255,.16) 50%, rgba(190,210,230,.12) 53%, transparent 62%);
+  background-size: 100% 100%, 260% 100%;
+  background-position: 0 0, 130% 0;
+  animation: plate-sweep 9s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes plate-sweep { 0%, 60% { background-position: 0 0, 130% 0; } 90%, 100% { background-position: 0 0, -30% 0; } }
+.plate:hover { transform: translateY(-3px); box-shadow: inset 0 1px 0 rgba(255,255,255,.2), inset 0 -1px 0 rgba(0,0,0,.5), 0 24px 44px -18px rgba(0,0,0,.8); }
+
+.screw { position: absolute; width: 10px; height: 10px; border-radius: 50%; z-index: 2; pointer-events: none;
+  background: radial-gradient(circle at 35% 30%, #e6e9ec, #8d949c 45%, #3a3f45 80%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.15); }
+.screw::before, .screw::after { content: ""; position: absolute; left: 50%; top: 50%; width: 6px; height: 1.5px; margin: -.75px 0 0 -3px; background: rgba(20,22,25,.75); }
+.screw::before { transform: rotate(var(--r, 45deg)); } .screw::after { transform: rotate(calc(var(--r, 45deg) + 90deg)); }
+.screw.s1 { top: 10px; left: 10px; } .screw.s2 { top: 10px; right: 10px; } .screw.s3 { bottom: 10px; left: 10px; } .screw.s4 { bottom: 10px; right: 10px; }
+
+.chrome-text {
+  background: linear-gradient(180deg, #ffffff 0%, #c9d0d8 45%, #8d959f 55%, #e9edf1 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.6));
+}
+
+/* Stats become instrument plates on a dark band */
+.stats { background: var(--ink); border-bottom: 1px solid var(--ink-line); }
+.stats .wrap { gap: 18px; }
+.stats .plate { padding: 22px 24px 20px; }
+.stats .stat-num { font-size: 52px; }
+.stats .stat-label { color: #b9bec5; text-shadow: 0 -1px 0 rgba(0,0,0,.5); }
+.stats .plate::after { content: ""; position: absolute; left: 24px; right: 24px; bottom: 0; height: 3px; background: var(--accent); border-radius: 3px 3px 0 0; opacity: .9; }
+
+/* Approach pillars as plates */
+.pillars .plate { padding: 30px 28px; border-radius: var(--radius); }
+.pillars .plate p { color: #c3c8ce; }
+
+/* Featured project: "On site now" plate bolted to the photo */
+.onsite { margin: -92px 32px 0; z-index: 3; padding: 20px 26px 18px; display: flex; flex-direction: column; gap: 6px; border-left: 0; }
+.onsite > .edge { position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #ffb06b, var(--accent) 40%, #b4460c); box-shadow: 0 0 16px rgba(242,140,56,.45); }
+.os-top { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #b9bec5; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+.os-dot { width: 8px; height: 8px; border-radius: 50%; background: #4cc38a; box-shadow: 0 0 0 3px rgba(76,195,138,.18); animation: os-pulse 2.4s ease-in-out infinite; }
+@keyframes os-pulse { 50% { box-shadow: 0 0 0 6px rgba(76,195,138,.05); } }
+.os-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 18px; }
+.os-name { font-family: var(--head); font-weight: 700; font-size: 24px; }
+.os-sub { font-size: 14px; color: #c9cdd2; }
+.os-bar { position: relative; height: 8px; margin-top: 8px; border-radius: 2px; background: #1a1d21; box-shadow: inset 0 1px 2px rgba(0,0,0,.6); overflow: hidden; }
+.os-bar span { position: absolute; inset: 0 auto 0 0; width: 0; background: linear-gradient(90deg, #c95f17, var(--accent)); transition: width 1.2s cubic-bezier(.2,.7,.2,1); }
+.os-bar i { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.12); }
+.os-meta { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; color: #9aa0a8; font-variant-numeric: tabular-nums; }
+.os-meta strong { color: #fff; font-weight: 600; }
+.feature-card.stacked .feature-photo figcaption { top: 16px; bottom: auto; }
+.feature-card { overflow: visible; }
+.feature-card .feature-photo { border-radius: 20px 20px 0 0; overflow: hidden; }
+
+/* Current role on the timeline gets a plate too */
+.tl-item.plate { border-color: #4a5058; box-shadow: inset 0 1px 0 rgba(255,255,255,.16), 0 0 0 1px var(--accent); }
+.tl-item.plate h3 { color: #fff; }
+.tl-item.plate .tl-co, .tl-item.plate .tl-proj { color: #c3c8ce; }
+.tl-item.plate .tl-dates { color: var(--accent); }
+.tl-item.plate .screw { width: 8px; height: 8px; }
+.tl-item.plate .screw.s1, .tl-item.plate .screw.s3 { left: auto; right: 10px; }
+.tl-item.plate .screw.s2, .tl-item.plate .screw.s4 { display: none; }
+
+@media (max-width: 640px) {
+  .onsite { margin: 0; border-radius: 0; padding: 18px 20px 16px; }
+  .onsite .screw { display: none; }
+  .os-meta { flex-wrap: wrap; }
+  .os-meta .os-pct { order: -1; width: 100%; }
+  .stats .stat-num { font-size: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plate::before, .os-dot { animation: none; }
+  .plate, .plate:hover { transition: none; transform: none; }
+}
