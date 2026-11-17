@@ -171,6 +171,9 @@ p { margin: 0; }
 .about .wrap { display: flex; flex-wrap: wrap; gap: 56px; padding-top: 96px; padding-bottom: 96px; }
 .about-head { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
 .about-body { flex: 999 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 18px; font-size: 18px; line-height: 1.7; color: #3e434a; }
+.about-photo { margin: 18px 0 0; width: 100%; max-width: 320px; aspect-ratio: 1; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(22,24,27,.18); background: #16181B; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 700px) { .about-photo { max-width: 240px; } }
 .edu { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
 .edu img { width: 140px; height: 96px; object-fit: cover; border-radius: 10px; flex: none; }
 .edu > div { flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 4px; }

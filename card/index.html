@@ -83,6 +83,11 @@
     /* front */
     .front { display: grid; grid-template-columns: 1fr auto; padding: 7% 7% 7% 9%; }
     .front .top { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-start; }
+    .photo {
+      width: clamp(52px, 13vw, 72px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; display: block;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 0 3px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.4), 0 4px 10px rgba(0,0,0,.45);
+    }
     .mark {
       width: clamp(42px, 11vw, 60px); aspect-ratio: 1; border-radius: 10px; display: grid; place-items: center;
       font-family: var(--head); font-weight: 700; font-size: clamp(17px, 4.4vw, 24px); color: var(--ink);
@@ -181,7 +186,7 @@
       <div class="face front">
         <span class="screw s1" aria-hidden="true"></span><span class="screw s2" aria-hidden="true"></span><span class="screw s3" aria-hidden="true"></span><span class="screw s4" aria-hidden="true"></span>
         <div class="top">
-          <div class="mark" aria-hidden="true">PZ</div>
+          <img class="photo" src="../images/headshot-card.jpg" alt="" width="240" height="240">
           <div class="loc engrave">Calgary · Alberta<br>Canada</div>
         </div>
         <div class="who">
