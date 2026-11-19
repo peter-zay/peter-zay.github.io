@@ -24,7 +24,7 @@
   // On site now: share of the construction schedule elapsed today
   const fill = document.getElementById('osFill');
   if (fill) {
-    const start = new Date(2026, 3, 1), end = new Date(2027, 6, 31), now = new Date();
+    const start = new Date(2026, 2, 2), end = new Date(2027, 6, 31), now = new Date();
     const pct = Math.round(Math.min(1, Math.max(0, (now - start) / (end - start))) * 100);
     const today = document.getElementById('osToday');
     document.getElementById('osNum').textContent = pct + '%';

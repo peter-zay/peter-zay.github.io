@@ -217,7 +217,7 @@
     <div class="os-name">CASA House Calgary</div>
     <div class="os-sub">Youth mental health centre, delivered through Integrated Project Delivery</div>
     <div class="os-bar" role="img" id="osBar" aria-label="Construction schedule elapsed"><span id="osFill"></span></div>
-    <div class="os-meta"><span>Spring 2026</span><span id="osPct">Construction schedule elapsed</span><span>Jul 2027 (est.)</span></div>
+    <div class="os-meta"><span>Mar 2026</span><span id="osPct">Construction schedule elapsed</span><span>Jul 2027 (est.)</span></div>
   </section>
 
   <div class="actions">
@@ -274,7 +274,7 @@
 
     // on-site strip: share of the construction schedule elapsed today
     (() => {
-      const start = new Date(2026, 3, 1), end = new Date(2027, 6, 31), now = new Date();
+      const start = new Date(2026, 2, 2), end = new Date(2027, 6, 31), now = new Date();
       const pct = Math.round(Math.min(1, Math.max(0, (now - start) / (end - start))) * 100);
       document.getElementById('osPct').innerHTML = '<strong>' + pct + '%</strong> of construction schedule elapsed';
       document.getElementById('osBar').setAttribute('aria-label', pct + '% of construction schedule elapsed');
