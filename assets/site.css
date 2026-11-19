@@ -179,6 +179,7 @@ p { margin: 0; }
 .edu > div { flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
 .edu h3 { font-size: 19px; color: var(--ink); }
 .edu p { font-size: 15px; line-height: 1.5; color: var(--muted); }
+.cert .seal { width: 96px; height: 96px; flex: none; margin: 0 22px; border-radius: 50%; display: grid; place-items: center; text-align: center; font-weight: 800; font-size: 13px; line-height: 1.1; letter-spacing: .12em; color: #3b2a06; background: radial-gradient(circle at 35% 30%, #fff3c4 0%, #e8c25a 35%, #b8871f 70%, #7a5a12 100%); box-shadow: inset 0 0 0 4px rgba(255,255,255,.25), inset 0 0 0 7px rgba(122,90,18,.6), 0 4px 14px rgba(0,0,0,.35); }
 .companies { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 10px; }
 .companies img { width: 64px; height: 64px; border-radius: 12px; border: 1px solid var(--line); background: #fff; object-fit: contain; }
 
